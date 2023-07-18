@@ -5,6 +5,7 @@ import Hero from './Hero.js';
 import Rewards from './Rewards';
 import Roadmap from './Roadmap';
 import Wargames from './Wargames';
+import Footer from './Footer';
 function App() {
 
   // window.addEventListener('scroll', () => {
