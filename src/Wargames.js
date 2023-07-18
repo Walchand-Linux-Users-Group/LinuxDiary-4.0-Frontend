@@ -7,8 +7,8 @@ const Wargames = () => {
             <div className='heading-1'>Wargames</div>
       <img
 
-        src="./images/wargames.png"
-        alt="4518760-open-opensource-source-icon"
+        src="./images/Wargames.png"
+        alt="wargames"
         border={0}
         className='logoImg'
       />
