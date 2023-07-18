@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Bubbles from './Bubbles';
+import Hero from './Hero.js';
+import Rewards from './Rewards';
+import Roadmap from './Roadmap';
+import Wargames from './Wargames';
 function App() {
+
+  // window.addEventListener('scroll', () => {
+  //   document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+  // }, false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+      <Hero />
+    <div className='colorsec'>
+          <Bubbles />
+      {/* <div className='header titlebox'> */}
+        <div className='glass titlebox'>
+        <h1>Linux Diary 4.0</h1>
+        <h2>#Explore The Linux Realm</h2>
+      </div>
+      <Roadmap />
+      <Wargames />
+      <Rewards />
+      {/* <Footer /> */}
     </div>
+    </>
   );
 }
 

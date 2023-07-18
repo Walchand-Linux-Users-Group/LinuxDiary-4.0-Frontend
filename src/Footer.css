@@ -1,0 +1,13 @@
+.footer{
+    display: flex;
+    height: 100vh;
+}
+
+.imgg img{
+    display: block;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    z-index: 0;
+}
