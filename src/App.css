@@ -3,7 +3,8 @@
 body {
   margin: 0;
 }
-h1{
+
+h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 3rem;
   font-weight: 600;
@@ -11,7 +12,8 @@ h1{
   color: #ffffff;
   text-shadow: rgb(0, 0, 0) 0em 0.025em 0.05em;
 }
-h2{
+
+h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   font-weight: 600;
@@ -19,12 +21,14 @@ h2{
   color: #ffffff;
   text-shadow: rgb(0, 0, 0) 0em 0.025em 0.05em;
 }
+
 p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: 1px;
-  font-size: 14px;
+  font-size: 1rem;
   color: #333333;
 }
+
 .titlebox {
   width: 35vw;
   margin: -2.5% auto 10% auto;
@@ -58,8 +62,8 @@ p {
 
 .btn-hover {
   -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   text-shadow: rgb(0, 0, 0) 0em 0.025em 0.05em;
   width: auto;
   padding: 2% 4%;
@@ -79,6 +83,57 @@ p {
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: rgb(0, 0, 0) 0em 0.025em 0.05em;
+  }
+
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: rgb(0, 0, 0) 0em 0.025em 0.05em;
+  }
+
+
+
+
+
+
+  .btn-hover {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-shadow: rgb(0, 0, 0) 0em 0.025em 0.05em;
+    width: auto;
+    padding: 4% 8%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 2rem;
+    height: auto;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+}
+
 
 .btn-hover:hover {
   background-position: 100% 0;
