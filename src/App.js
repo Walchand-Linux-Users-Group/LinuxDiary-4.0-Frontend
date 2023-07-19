@@ -24,7 +24,7 @@ function App() {
       <Roadmap />
       <Wargames />
       <Rewards />
-      <Footer />
+      {/* <Footer /> */}
     </div>
     </>
   );
