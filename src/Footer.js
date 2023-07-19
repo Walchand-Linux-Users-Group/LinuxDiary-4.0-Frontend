@@ -7,7 +7,7 @@ function Footer() {
             <div className='footer glass'>
                 <div className='logo-icon-container'>
                     <div className='wlug-logo'>
-                        <img src="./images/WLUD_white.png" alt='' />
+                        <img src="./images/WLUG_white.png" alt='' />
                     </div>
                     <div class='smedia-links'>
                         <div className='media-container'>
