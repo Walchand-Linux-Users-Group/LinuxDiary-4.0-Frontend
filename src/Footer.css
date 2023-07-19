@@ -24,7 +24,7 @@
     flex-wrap: wrap;
     row-gap: 4rem;
     justify-content: space-around;
-    padding: 4rem 0;
+    padding: 1.5rem 0;
     font-family: 'poppins', sans-serif !important;
     border-radius: 1em;
     position: relative;
@@ -33,10 +33,13 @@
     
 }
 .footer-bg{
+    position: relative;
+    z-index: inherit;
     padding: 1em 0.8em;
     background-color: #ddc89e;
 }
 .logo-icon-container {
+    align-items: center;
     display: flex;
     width: 40%;
     justify-content: space-between;
@@ -48,7 +51,17 @@
     flex-direction: column;
     
 }
+.wlug-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wlug-logo p {
+    font-size: 0.7rem;
+    align-self: center;
 
+}
 .wlug-logo img {
     width: 16rem;
     height: auto;
@@ -71,18 +84,19 @@
 
 .navigation {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 10em;
     align-items: center;
     justify-content: center;
 }
 
 .navli {
+
     display: flex;
-    flex-direction: row;
-    gap: 4em;
-    align-items: end;
-    justify-content: center;
-    margin-bottom: 2rem;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.3em;
+    margin-bottom: 1rem;
     margin-top: 1rem;
     font-family: 'poppins', sans-serif;
     font-weight: 600;
@@ -93,24 +107,25 @@
 .policies div a {
     text-decoration: none;
     text-align: center;
-    color: white;
+    color: rgb(71, 71, 71);
 }
 
 .navli a:hover,
 .policies a:hover,
 .ics a:hover {
-    color: #fafafa;
+    text-shadow: 0.5px 0.5px 0.1px #000000;
+    color: #000000;
     text-decoration: none;
 }
 .policies{
+    gap: 0.5em;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    height: 100%!important;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-evenly;
 }
-.policies div {
-    display: flex;
-}
+
 
 
 .ics {
@@ -122,37 +137,6 @@
 }
 
 
-@media only screen and (max-width: 1700px) {
-    .logo-icon-container {
-        width: 45%;
-    }
-}
-
-@media only screen and (max-width: 1500px) {
-    .logo-icon-container {
-        width: 50%;
-    }
-}
-
-@media only screen and (max-width: 1270px) {
-    .logo-icon-container {
-        width: 55%;
-    }
-
-    .footer {
-        column-gap: 2rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-}
-
-@media only screen and (max-width: 1236px) {
-    .logo-icon-container {
-        width: 100%;
-        justify-content: center;
-        column-gap: 4rem;
-    }
-}
 
 @media (max-width: 768px) {
     .dash{
@@ -180,7 +164,7 @@
     }
 
     .copryright p {
-        font-size: 0.9rem;
+        font-size: 0.5rem;
     }
 }
 

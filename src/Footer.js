@@ -7,7 +7,10 @@ function Footer() {
             <div className='footer glass'>
                 <div className='logo-icon-container'>
                     <div className='wlug-logo'>
-                        <img src="./images/WLUG_white.png" alt='' />
+                        <img src="./images/WLUG_black.png" alt='' />
+                        <div>
+                            <p>&#169; 2023 WCEWLUG, ALL RIGHTS RESERVED</p>
+                        </div>
                     </div>
                     <div class='smedia-links'>
                         <div className='media-container'>
@@ -22,8 +25,8 @@ function Footer() {
                                     <i class='fa-brands fa-linkedin'></i>
                                     <svg
                                         xmlns='http://www.w3.org/2000/svg'
-                                        width='22'
-                                        height='22'
+                                        width='30'
+                                        height='30'
                                         fill='black'
                                         class='bi bi-linkedin'
                                         viewBox='0 0 16 16'
@@ -40,8 +43,8 @@ function Footer() {
                                     <i class='fa-brands fa-instagram'></i>
                                     <svg
                                         xmlns='http://www.w3.org/2000/svg'
-                                        width='22'
-                                        height='22'
+                                        width='30'
+                                        height='30'
                                         fill='black'
                                         class='bi bi-instagram'
                                         viewBox='0 0 16 16'
@@ -58,8 +61,8 @@ function Footer() {
                                     <i class='fa-brands fa-github'></i>
                                     <svg
                                         xmlns='http://www.w3.org/2000/svg'
-                                        width='22'
-                                        height='22'
+                                        width='30'
+                                        height='30'
                                         fill='black'
                                         class='bi bi-github'
                                         viewBox='0 0 16 16'
@@ -76,8 +79,8 @@ function Footer() {
                                     <i class='fa-brands fa-twitter'></i>
                                     <svg
                                         xmlns='http://www.w3.org/2000/svg'
-                                        width='22'
-                                        height='22'
+                                        width='30'
+                                        height='30'
                                         fill='black'
                                         class='bi bi-twitter'
                                         viewBox='0 0 16 16'
@@ -86,11 +89,9 @@ function Footer() {
                                     </svg>
                                 </a>
                             </div>
-                            <div className='copryright'>
-                                <p>&#169; 2023 WCEWLUG, ALL RIGHTS RESERVED</p>
-                            </div>
                         </div>
                     </div>
+                            
                 </div>
                 <div class='navigation'>
                     <div class='navli'>
@@ -110,7 +111,6 @@ function Footer() {
                                 Privacy Policy
                             </a>
                         </div>
-                            <p className='dash'>&nbsp; | &nbsp;</p>
                         <div>
                             <a
                                 href='https://wiki.wcewlug.org/policies/terms-and-conditions'
@@ -120,8 +120,7 @@ function Footer() {
                                 Terms and Conditions
                             </a>
                         </div>
-                            <p className='dash'>&nbsp; | &nbsp;</p>
-                       <div>
+                        <div>
                             <a
                                 href='https://wiki.wcewlug.org/policies/cancellation-refund-policy'
                                 target='_blank'
@@ -129,10 +128,12 @@ function Footer() {
                             >
                                 Cancellation/Refund Policy &nbsp;
                             </a>
-                       </div>
+                        </div>
                     </div>
                 </div>
+                
             </div>
+            
         </div>
     )
 }

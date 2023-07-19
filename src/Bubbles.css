@@ -62,7 +62,7 @@
     overflow: hidden;
 }
 
-.canvas-5 {
+/* .canvas-5 {
     height: 120vh;
     width: 100vw;
     position: absolute;
@@ -70,7 +70,7 @@
     left: 0%;
     right: 100%;
     overflow: hidden;
-}
+} */
 
 @media (max-width:768px) {
     .colorsec {
