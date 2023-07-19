@@ -2,8 +2,8 @@ import React from 'react'
 
 const Wargames = () => {
   return (
-      <div className='info glass wargames'>
-        <img src="" alt="" />
+      <div className='info session glass wargames'>
+        
             <div className='heading-1'>Wargames</div>
       <img
 

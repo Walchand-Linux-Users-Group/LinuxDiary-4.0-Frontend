@@ -1,29 +1,44 @@
 .session {
-    padding: 5% 5%;
-    width: 80%;
-    height: 80%;
+    padding: 4% 4% 4% 4%;
+    width: 40%;
+    height: 40%;
     align-items: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 4% 4%;
+    z-index: 1;
+    position: relative;
+    max-width: 40vw;
+}
+.wargames {
+    box-shadow: 0px -4px 32px -4px rgb(252, 252, 255)!important;
+    /* background: rgba(160, 160, 160, 0.387)!important; */
+    width: 60%;
+    max-width: 60vw;
+    padding: 3% 0 3% 0 !important;
+}
+.wargames .logoImg{
+    width: 40%;
+    max-width: 40vw;
 }
 .logoImg {
-    width: 30%;
-    height: 30%;
+    width: 60%;
+    height: 60%;
 }
 .heading-2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     text-align: center;
     text-shadow: rgb(0, 0, 0) 0em 0.025em 0.05em;
     
 }
 .text{
-    padding: 0 5%;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     text-align: center;
     color: #ffffff;
@@ -41,8 +56,11 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            max-width: 90%;
         }
-    
+        .flex{
+            flex-direction: column;
+        }
         .logoImg {
             width: 50%;
             height: 50%;

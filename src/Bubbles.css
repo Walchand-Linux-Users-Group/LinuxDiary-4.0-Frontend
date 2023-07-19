@@ -26,7 +26,6 @@
 .canvas-1 {
     height: 120vh;
     width: 100vw;
-    /* background: linear-gradient(to bottom, #edfffa 0%, #31c5d6 100%); */
     position: absolute;
     top: 35vh;
     left: 0%;
@@ -36,7 +35,6 @@
 .canvas-2 {
     height: 120vh;
     width: 100vw;
-    /* background: linear-gradient(to bottom, #edfffa 0%, #31c5d6 100%); */
     position: absolute;
     top: 155vh;
     left: 0%;
@@ -47,7 +45,6 @@
 .canvas-3 {
     height: 120vh;
     width: 100vw;
-    /* background: linear-gradient(to bottom, #edfffa 0%, #31c5d6 100%); */
     position: absolute;
     top: 275vh;
     left: 0%;
@@ -58,7 +55,6 @@
 .canvas-4 {
     height: 120vh;
     width: 100vw;
-    /* background: linear-gradient(to bottom, #edfffa 0%, #31c5d6 100%); */
     position: absolute;
     top: 395vh;
     left: 0%;
@@ -69,7 +65,6 @@
 .canvas-5 {
     height: 120vh;
     width: 100vw;
-    /* background: linear-gradient(to bottom, #edfffa 0%, #31c5d6 100%); */
     position: absolute;
     top: 515vh;
     left: 0%;

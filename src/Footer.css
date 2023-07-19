@@ -1,7 +1,9 @@
+/* 
+
 .footer {
     display: flex;
-    height: 100vh;
-}
+    height: auto;
+} */
 
 .imgg img {
     display: block;
@@ -11,27 +13,34 @@
     object-fit: contain;
     position: relative;
     z-index: 0;
+    margin-bottom: -5%;
 }
-/* .footer {
+.footer {
     display: flex;
+    height: auto;
     flex-direction: row;
-    background-color: rgba(108, 208, 255, 0.836);
+    background-color: #ddc89e;
     align-items: center;
     flex-wrap: wrap;
     row-gap: 4rem;
     justify-content: space-around;
-    margin: 1em 0.8em;
     padding: 4rem 0;
     font-family: 'poppins', sans-serif !important;
     border-radius: 1em;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.568);
+    
 }
-
+.footer-bg{
+    padding: 1em 0.8em;
+    background-color: #ddc89e;
+}
 .logo-icon-container {
     display: flex;
     width: 40%;
     justify-content: space-between;
     column-gap: 2rem;
-    
 }
 
 .smedia-links {
@@ -43,6 +52,7 @@
 .wlug-logo img {
     width: 16rem;
     height: auto;
+    margin-right: 2rem;
 }
 
 .media-container {
@@ -64,18 +74,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
 }
 
 .navli {
     display: flex;
     flex-direction: row;
     gap: 4em;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     margin-bottom: 2rem;
     margin-top: 1rem;
-    font-family: Montserrat, sans-serif;
+    font-family: 'poppins', sans-serif;
     font-weight: 600;
     font-size: 1.45rem;
 }
@@ -84,14 +93,25 @@
 .policies div a {
     text-decoration: none;
     text-align: center;
+    color: white;
 }
 
 .navli a:hover,
 .policies a:hover,
 .ics a:hover {
-    color: #f3db16;
+    color: #fafafa;
     text-decoration: none;
 }
+.policies{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.policies div {
+    display: flex;
+}
+
 
 .ics {
     display: flex;
@@ -101,10 +121,6 @@
     justify-content: center;
 }
 
-.policies,
-.policies div {
-    display: flex;
-}
 
 @media only screen and (max-width: 1700px) {
     .logo-icon-container {
@@ -139,6 +155,13 @@
 }
 
 @media (max-width: 768px) {
+    .dash{
+        display: none;
+    }
+    .policies{
+        flex-direction: row;
+        gap: 1em;
+    }
     .footer {
         flex-wrap: wrap;
         gap: 1em;
@@ -220,4 +243,4 @@
     .navli {
         gap: 1em;
     }
-} */
+} 

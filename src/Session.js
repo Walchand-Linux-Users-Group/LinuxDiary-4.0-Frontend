@@ -2,7 +2,7 @@ import React from 'react'
 import './Session.css'
 const Session = (props) => {
     return (
-        <div className='session'>
+        <div className='session glass'>
                 <img
                     src={props.imgsrc}
                     alt="4518760-open-opensource-source-icon"

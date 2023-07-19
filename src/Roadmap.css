@@ -1,6 +1,5 @@
 .info {
-    padding: 5% 5%;
-    width: 65vw;
+    padding: 5% 0%;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
@@ -8,13 +7,10 @@
     flex-direction: column;
     margin-bottom: 10%;
 }
+.flex{
+    display: flex;
+}
 
-/* .wargames {
-    box-shadow: 0px -4px 32px -4px rgb(252, 252, 255)!important;
-    background: rgba(160, 160, 160, 0.387)!important;
-    
-
-} */
 .glass {
     background: rgba(255, 255, 255, 0.188);
     box-shadow: 0 8px 32px 0 rgba(78, 90, 255, 0.568);
