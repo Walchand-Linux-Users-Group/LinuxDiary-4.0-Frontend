@@ -27,7 +27,7 @@
     height: 120vh;
     width: 100vw;
     position: absolute;
-    top: 35vh;
+    top: 30vh;
     left: 0%;
     overflow: hidden;
 }
@@ -36,7 +36,7 @@
     height: 120vh;
     width: 100vw;
     position: absolute;
-    top: 155vh;
+    top: 150vh;
     left: 0%;
     right: 100%;
     overflow: hidden;
@@ -46,7 +46,7 @@
     height: 120vh;
     width: 100vw;
     position: absolute;
-    top: 275vh;
+    top: 270vh;
     left: 0%;
     right: 100%;
     overflow: hidden;
@@ -56,21 +56,21 @@
     height: 120vh;
     width: 100vw;
     position: absolute;
-    top: 395vh;
+    top: 390vh;
     left: 0%;
     right: 100%;
     overflow: hidden;
 }
 
-/* .canvas-5 {
+.canvas-5 {
     height: 120vh;
     width: 100vw;
     position: absolute;
-    top: 515vh;
+    top: 510vh;
     left: 0%;
     right: 100%;
     overflow: hidden;
-} */
+}
 
 @media (max-width:768px) {
     .colorsec {
@@ -130,12 +130,11 @@
             overflow: hidden;
         }
         .canvas-4 {
-            display: none;
             height: 120vh;
             width: 100vw;
             /* background: linear-gradient(to bottom, #edfffa 0%, #31c5d6 100%); */
             position: absolute;
-            top: 395vh;
+            top: 460vh;
             left: 0%;
             right: 100%;
             overflow: hidden;

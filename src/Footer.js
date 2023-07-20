@@ -2,9 +2,24 @@ import React from 'react'
 import './Footer.css'
 
 function Footer() {
+    function goToHome() {
+        const home = document.getElementById('root'); // Change 'targetElement' to the actual ID of your target element
+
+        if (home) {
+            home.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    function goToRegister() {
+        const register = document.getElementById('register'); // Change 'targetElement' to the actual ID of your target element
+
+        if (register) {
+            register.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
     return (
         <div className='footer-bg '>
-
+            
             <div className='footer glass'>
                 <div className='wlug-logo padding1rem'>
                     <img src="./images/WLUG_black.png" alt='' />
@@ -94,11 +109,11 @@ function Footer() {
                 </div>
 
                 <div className='navli padding1rem'>
-                    <a href='#home'>Home</a>
+                    <a onClick={goToHome}>Home</a>
                     <a href='https://www.wcewlug.org/' target='_blank' rel='noreferrer'>
                         About Us
                     </a>
-                    <a href='#register'>Register</a>
+                    <a onClick={goToRegister}>Register</a>
                 </div>
 
                 <div className='policies padding1rem'>
