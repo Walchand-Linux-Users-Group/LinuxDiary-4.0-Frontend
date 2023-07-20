@@ -23,7 +23,7 @@ const Rewards = () => {
                 </div>
             </div>
             <div className='register'>
-                <button class="btn-hover color-2" onClick={handleRegister}>Register Now</button>
+                <button className="btn-hover color-2" onClick={handleRegister}>Register Now</button>
             </div>
             <div className='imgg'>
                 <img src="./images/footer.png" alt="sand" />

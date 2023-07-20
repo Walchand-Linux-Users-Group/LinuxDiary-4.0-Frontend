@@ -7,7 +7,8 @@
     flex-direction: column;
     margin-bottom: 10%;
 }
-.flex{
+
+.flex {
     display: flex;
 }
 
@@ -61,13 +62,12 @@
 @media (max-width:768px) {
     .info {
         padding: 5% 5%;
-        width: 65vw;
-        margin: 20% auto;
+        width: 70%;
+        margin: 10% auto;
         align-items: center;
         justify-content: center;
         display: flex;
         flex-direction: column;
-        margin-bottom: 10%;
     }
 
 
@@ -89,32 +89,32 @@
         text-shadow: rgb(0, 0, 0) 0em 0.025em 0.05em;
         margin-bottom: 5%;
     }
-.titlebox {
 
-    width: 55vw;
-    margin: -1% auto 10% auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'poppins', sans-serif;
-    background: linear-gradient(60deg, rgba(159, 151, 191, 0.705) 0%, rgb(154, 194, 247) 100%);
-    color: white;
-    padding: 4% 4%;
-    box-shadow: 0 4px 30px rgb(45, 160, 255);
-    border-radius: 20px;
-}
+    .titlebox {
+        width: 60vw;
+        margin: -1% auto 10% auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'poppins', sans-serif;
+        background: linear-gradient(60deg, rgba(159, 151, 191, 0.705) 0%, rgb(154, 194, 247) 100%);
+        color: white;
+        padding: 0.5rem 1rem 1rem 1rem !important;
+        box-shadow: 0 4px 30px rgb(45, 160, 255);
+        border-radius: 20px;
+    }
 
-.titlebox h1 {
-    font-size: 1.75rem;
-    font-weight: 600;
-    margin: 0 0 0.5rem 0;
-    padding: 0;
-}
+    .titlebox h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin: 0 0 0.5rem 0;
+        padding: 0;
+    }
 
-.titlebox h2 {
-    font-size: 0.75rem;
-    font-weight: 600;
-    margin: 0;
-    padding: 0;
-}
+    .titlebox h2 {
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+    }
 }

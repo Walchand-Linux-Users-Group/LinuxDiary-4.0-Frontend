@@ -129,7 +129,6 @@
             right: 100%;
             overflow: hidden;
         }
-    
         .canvas-4 {
             display: none;
             height: 120vh;
@@ -140,10 +139,6 @@
             left: 0%;
             right: 100%;
             overflow: hidden;
-        }
-    
-        .canvas-5 {
-           display: none;
         }
     
 }
