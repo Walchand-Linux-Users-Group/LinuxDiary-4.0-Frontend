@@ -64,7 +64,7 @@ input[type=submit] {
 
 @media (max-width: 768px) {
     .flex-container {
-        margin: 5% 7.5%;
+        margin: 5% 5%;
         padding: 0;
 
         display: flex;
@@ -80,7 +80,7 @@ input[type=submit] {
     }
 
     form {
-        width: auto;
+        width: 100%;
         color: white;
         padding: 30px;
     }
