@@ -135,6 +135,8 @@
 }
 
 @media (max-width: 768px) {
+
+    
     .ics,.stay_tuned {  
             margin: 0.5rem;
         }
