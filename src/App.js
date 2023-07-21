@@ -16,7 +16,7 @@ function App() {
       <Bubbles />
       <Hero />
       <div className='colorsec'>
-        {/* <div className='header titlebox'> */}
+        
         <div className='glass titlebox'>
           <img src="./images/WLUG_black.png" alt="logo" />
           <div>
