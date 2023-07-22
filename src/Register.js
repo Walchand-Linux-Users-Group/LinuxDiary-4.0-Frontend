@@ -36,6 +36,10 @@ const Register = () => {
         }))
         console.log(formData)
     }
+    const handleReset = (event) => {
+        event.preventDefault()
+        event.target.reset()
+    }
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -45,11 +49,12 @@ const Register = () => {
             setisLoading(true)
             const res = await API.post('/createUser', formData)
             setisLoading(false)
-
+            handleReset(e)
             console.log('res :')
             console.log(res)
             console.log(res.data.postdata.phone.toString().length)
             if (res.status === 201) {
+                
                 // alert('You have successfully Registered. Check email for confirmation')
                 swal
                     .fire({
@@ -65,21 +70,7 @@ const Register = () => {
                             cancelButton: 'animated bounceIn faster',
                         },
                     })
-                    .then((result) => {
-                        if (result.isConfirmed) {
-                            setFormData({
-                                name: '',
-                                email: '',
-                                phoneno: '',
-                                transactionId: '',
-                                collegeName: '',
-                                yearOfStudy: 'First year',
-                                course: 'Both',
-                                isDualBooted: '',
-                                githubid: '',
-                            })
-                        }
-                    })
+                    
                 return true
             }
             console.log(res)

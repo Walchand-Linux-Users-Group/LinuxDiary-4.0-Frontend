@@ -32,7 +32,7 @@ form {
 
 input,
 select {
-    width: 100%;
+    width: 100% !important;
     margin: 8px;
     margin-left: 0px;
     display: block;
