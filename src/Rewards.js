@@ -35,7 +35,7 @@ const Rewards = () => {
             <div>
                 <Register />
                 <div className='imgg'>
-                    <img src="./images/footer.png" alt="sand" />
+                    <img src="./images/footer-new.png" alt="sand" />
                 </div>
             </div></>
     )
