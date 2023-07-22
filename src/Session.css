@@ -12,9 +12,13 @@
     position: relative;
     max-width: 40vw;
 }
-
+.session:hover{
+    box-shadow: 0px -4px 32px -4px rgb(163, 219, 252) !important;
+    border-color: aqua;
+    /* background: rgba(160, 160, 160, 0.387)!important; */
+}
 .wargames {
-    box-shadow: 0px -4px 32px -4px rgb(252, 252, 255) !important;
+    /* box-shadow: 0px -4px 32px -4px rgb(252, 252, 255) !important; */
     /* background: rgba(160, 160, 160, 0.387)!important; */
     width: 60%;
     max-width: 60vw;
@@ -25,8 +29,19 @@
     width: 40%;
     max-width: 40vw;
 }
-
+.wargames .logoImg:hover {
+    padding: 0% 0 2% 0;
+    width: 40%;
+        max-width: 40vw;
+}
 .logoImg {
+    padding: 2% 0 0% 0;
+    width: 60%;
+    height: 60%;
+    transition: 200ms;
+}
+.logoImg:hover {
+    padding: 0% 0 2% 0;
     width: 60%;
     height: 60%;
 }
