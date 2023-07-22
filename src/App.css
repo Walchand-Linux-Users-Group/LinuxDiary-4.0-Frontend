@@ -5,8 +5,6 @@ body {
   padding: 0 0;
 }
 
-
-
 h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 3rem;
@@ -79,9 +77,6 @@ p {
   padding: 0;
 }
 
-
-
-
 .btn-hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -98,7 +93,6 @@ p {
   text-align: center;
   border: none;
   background-size: 300% 100%;
-
   border-radius: 50px;
   -moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
@@ -106,6 +100,10 @@ p {
   transition: all .4s ease-in-out;
 }
 
+#register-button{
+    width: 50%!important;
+    padding: 1.25% 4%;
+}
 
 @media (max-width: 768px) {
   h1 {
@@ -190,7 +188,7 @@ p {
 }
 
 .btn-hover.color-5 {
-  background-image: linear-gradient(to right, #00dc3b, #00c22a, #01e00c, #20f000);
+  background-image: linear-gradient(to right, #1ab142, #00d12d, #00e10c, #1dca02);
   box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
 }
 
