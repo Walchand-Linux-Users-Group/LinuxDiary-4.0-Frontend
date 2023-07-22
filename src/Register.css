@@ -54,7 +54,7 @@ select {
 }
 
 input[type=submit] {
-    width: auto;
+    width: auto!important;
     padding: 0 3rem !important;
     margin: 2.5rem auto 0rem auto !important;
     height: 3rem !important;
