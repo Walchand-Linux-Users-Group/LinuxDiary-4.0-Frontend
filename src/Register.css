@@ -3,10 +3,9 @@
     padding: 20px;
 
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-
+    flex-wrap: wrap-reverse;
     backdrop-filter: blur(3px);
     border: 1px solid hsla(0, 0%, 100%, .18);
     border-radius: 10px;
@@ -68,7 +67,7 @@ input[type=submit] {
         padding: 0;
 
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
         align-items: center;
         justify-content: center;
 

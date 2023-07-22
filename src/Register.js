@@ -50,7 +50,7 @@ const Register = () => {
             console.log(res)
             console.log(res.data.postdata.phone.toString().length)
             if (res.status === 201) {
-                alert('You have successfully Registered. Check email for confirmation')
+                // alert('You have successfully Registered. Check email for confirmation')
                 swal
                     .fire({
                         title: 'Registered Successfully!! Check email for confirmation.',
@@ -235,14 +235,16 @@ const Register = () => {
                     {" "}
                     Branch{" "}
                 </label>
-                <input
-                    required=""
-                    placeholder="Your Branch"
-                    name="branch"
-                    id="branch"
-                    type="text"
-                    onChange={handleChange}
-                />
+                <br />
+                <select id="branch" name="branch" required=""
+                    onChange={handleChange}>
+                    <option value="" disabled selected>
+                        Select your option
+                    </option>
+                    <option value="CS">Computer Science Engineering / Computer Engineering</option>
+                    <option value="IT">Information Technology Engineering</option>
+                    <option value="OTHERS">Others</option>
+                </select>
                 <label htmlFor="yearOfStudy" className="input-labels">
                     {" "}
                     Year of Study{" "}
@@ -250,7 +252,7 @@ const Register = () => {
                 <br />
                 <select id="yearOfStudy" name="yearOfStudy" required=""
                     onChange={handleChange}>
-                    <option value="" disabled="" selected="">
+                    <option value="" disabled selected>
                         Select your option
                     </option>
                     <option value="First Year">First Year</option>
@@ -263,7 +265,7 @@ const Register = () => {
                 </label>
                 <br />
                 <select id="isDualBooted" name="isDualBooted" required="" onChange={handleChange}>
-                    <option value="" disabled="" selected="">
+                    <option value="" disabled selected>
                         Select your option
                     </option>
                     <option value="Yes">Yes</option>
