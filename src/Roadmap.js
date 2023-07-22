@@ -28,7 +28,7 @@ const Roadmap = () => {
           />
           <Session
             imgsrc="./images/S4.png"
-            heading="Session 4:NetVerse"
+            heading="Session 4: NetVerse"
             headingColor="#E5FF2C"
             text="Seeking knowledge and excitement? Join our captivating journey through the intricate worlds of GUI and CLI, unveiling the remarkable advantages of CLI. Together, we'll explore advanced commands, essential networking techniques, and many more." />
         </div>
