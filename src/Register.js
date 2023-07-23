@@ -299,7 +299,7 @@ const Register = () => {
             <div className='qr-div'>
                 <div className='qr-section'>
                     <div className='qr-text'>
-                        <p ><b><u>Scan QR to pay with any UPI app </u></b></p>
+                        <p ><b><u>Scan to pay</u></b></p>
                         <p>
                             UPI ID: dattnareshgangji21@okaxis<br /><br />
                             Amount: ₹‎199.00</p>
