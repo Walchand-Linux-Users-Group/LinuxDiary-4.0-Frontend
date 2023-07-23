@@ -304,8 +304,10 @@ const Register = () => {
                             UPI ID: dattnareshgangji21@okaxis<br /><br />
                             Amount: ₹‎199.00</p>
                     </div>
+                    <div>
 
-                    <img src="./images/qr.png" className="qr" />
+                        <img src="./images/qr.png" className="qr" />
+                    </div>
                 </div>
             </div>
         </div>
