@@ -54,7 +54,7 @@ const Register = () => {
             console.log(res)
             console.log(res.data.postdata.phone.toString().length)
             if (res.status === 201) {
-                
+
                 // alert('You have successfully Registered. Check email for confirmation')
                 swal
                     .fire({
@@ -70,7 +70,7 @@ const Register = () => {
                             cancelButton: 'animated bounceIn faster',
                         },
                     })
-                    
+
                 return true
             }
             console.log(res)
@@ -178,7 +178,7 @@ const Register = () => {
                 </label>
                 <input
                     required=""
-                    placeholder="Your Name"
+                    placeholder="    Your Name"
                     name="name"
                     id="name"
                     type="text"
@@ -190,7 +190,7 @@ const Register = () => {
                 </label>
                 <input
                     required=""
-                    placeholder="Your Email"
+                    placeholder="    Your Email"
                     name="email"
                     id="email"
                     type="email"
@@ -203,7 +203,7 @@ const Register = () => {
                 </label>
                 <input
                     required=""
-                    placeholder="Your Phone Number"
+                    placeholder="    Your Phone Number"
                     name="phone"
                     id="phone"
                     type="tel"
@@ -216,7 +216,7 @@ const Register = () => {
                 </label>
                 <input
                     required=""
-                    placeholder="Your College Name"
+                    placeholder="    Your College Name"
                     name="collegeName"
                     id="collegeName"
                     type="text"
@@ -227,48 +227,56 @@ const Register = () => {
                     Branch{" "}
                 </label>
                 <br />
-                <select id="branch" name="branch" required=""
-                    onChange={handleChange}>
-                    <option value="" disabled selected>
-                        Select your option
-                    </option>
-                    <option value="CS">Computer Science Engineering / Computer Engineering</option>
-                    <option value="IT">Information Technology Engineering</option>
-                    <option value="OTHERS">Others</option>
-                </select>
+
+                <div className='selectdropdown'>
+                    <select id="branch" name="branch" required=""
+                        onChange={handleChange} class="mySelectArrow">
+                        <option value="" disabled selected>
+                            Select your option
+                        </option>
+                        <option value="CS">Computer Science Engineering / Computer Engineering</option>
+                        <option value="IT">Information Technology Engineering</option>
+                        <option value="OTHERS">Others</option>
+                    </select>
+                </div>
                 <label htmlFor="yearOfStudy" className="input-labels">
                     {" "}
                     Year of Study{" "}
                 </label>
                 <br />
-                <select id="yearOfStudy" name="yearOfStudy" required=""
-                    onChange={handleChange}>
-                    <option value="" disabled selected>
-                        Select your option
-                    </option>
-                    <option value="First Year">First Year</option>
-                    <option value="Second Year">Second Year</option>
-                    <option value="Third Year">Third Year</option>
-                    <option value="Fourth Year">Fourth Year</option>
-                </select>
+
+                <div className='selectdropdown'>
+                    <select id="yearOfStudy" name="yearOfStudy" required=""
+                        onChange={handleChange} class="mySelectArrow">
+                        <option value="" disabled selected>
+                            Select your option
+                        </option>
+                        <option value="First Year">First Year</option>
+                        <option value="Second Year">Second Year</option>
+                        <option value="Third Year">Third Year</option>
+                        <option value="Fourth Year">Fourth Year</option>
+                    </select>
+                </div>
                 <label htmlFor="isDualBooted" className="input-labels">
                     Do you have Dual Booted Laptop ?{" "}
                 </label>
                 <br />
-                <select id="isDualBooted" name="isDualBooted" required="" onChange={handleChange}>
-                    <option value="" disabled selected>
-                        Select your option
-                    </option>
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
-                </select>
+                <div className='selectdropdown'>
+                    <select id="isDualBooted" name="isDualBooted" required="" onChange={handleChange} class="mySelectArrow">
+                        <option value="" disabled selected>
+                            Select your option
+                        </option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
                 <label htmlFor="transactionId" className="input-labels">
                     {" "}
                     Transaction ID{" "}
                 </label>
                 <input
                     required=""
-                    placeholder="Payment Transaction ID"
+                    placeholder="    Payment Transaction ID"
                     name="transactionId"
                     id="transactionId"
                     type="text"
@@ -280,7 +288,7 @@ const Register = () => {
                 </label>
                 <input
                     required=""
-                    placeholder="Referal Code"
+                    placeholder="    Referal Code"
                     name="referalCode"
                     id="referalCode"
                     type="text"
@@ -288,7 +296,18 @@ const Register = () => {
                 />
                 <input type="submit" defaultValue="REGISTER" className='btn-hover color-5' />
             </form>
-            <img src="./images/qr.png" className="qr" />
+            <div className='qr-div'>
+                <div className='qr-section'>
+                    <div className='qr-text'>
+                        <p ><b><u>Scan QR to pay with any UPI app </u></b></p>
+                        <p>
+                            UPI ID: dattnareshgangji21@okaxis<br /><br />
+                            Amount: ₹‎199.00</p>
+                    </div>
+
+                    <img src="./images/qr.png" className="qr" />
+                </div>
+            </div>
         </div>
 
     )
