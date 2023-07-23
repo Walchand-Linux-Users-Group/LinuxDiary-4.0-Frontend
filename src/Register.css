@@ -44,6 +44,7 @@ form {
 }
 
 .qr-text {
+padding:0px 4px;
     font-size: 1.6rem;
     font-weight: 600;
     text-align: center;
