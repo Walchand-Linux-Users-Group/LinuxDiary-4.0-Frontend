@@ -13,19 +13,22 @@ function App() {
   // }, false);
   return (
     <>
+      <Bubbles />
       <Hero />
-    <div className='colorsec'>
-          <Bubbles />
-      {/* <div className='header titlebox'> */}
+      <div className='colorsec'>
+        
         <div className='glass titlebox'>
-        <h1>Linux Diary 4.0</h1>
-        <h2>#Explore The Linux Realm</h2>
+          <img src="./images/WLUG_black.png" alt="logo" />
+          <div>
+            <h1>Linux Diary 4.0</h1>
+            <h2>#Explore The Linux Realm</h2>
+          </div>
+        </div>
+        <Roadmap />
+        <Wargames />
+        <Rewards />
       </div>
-      <Roadmap />
-      <Wargames />
-      <Rewards />
-      {/* <Footer /> */}
-    </div>
+      <Footer />
     </>
   );
 }

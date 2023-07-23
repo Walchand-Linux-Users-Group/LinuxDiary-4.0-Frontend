@@ -1,6 +1,5 @@
 .info {
-    padding: 5% 5%;
-    width: 65vw;
+    padding: 5% 0%;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
@@ -9,12 +8,10 @@
     margin-bottom: 10%;
 }
 
-/* .wargames {
-    box-shadow: 0px -4px 32px -4px rgb(252, 252, 255)!important;
-    background: rgba(160, 160, 160, 0.387)!important;
-    
+.flex {
+    display: flex;
+}
 
-} */
 .glass {
     background: rgba(255, 255, 255, 0.188);
     box-shadow: 0 8px 32px 0 rgba(78, 90, 255, 0.568);
@@ -23,6 +20,7 @@
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
 .heading-1 {
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
@@ -30,4 +28,93 @@
     text-align: center;
     color: #ffffff;
     text-shadow: rgb(0, 0, 0) 0em 0.025em 0.05em;
+}
+
+.titlebox {
+    width: 35vw;
+    margin: -1% auto 10% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'poppins', sans-serif;
+    background: linear-gradient(60deg, rgba(159, 151, 191, 0.705) 0%, rgb(154, 194, 247) 100%);
+    color: white;
+    padding: 4% 8%;
+    box-shadow: 0 4px 30px rgba(76, 149, 247, 1);
+    border-radius: 10px;
+}
+
+.titlebox h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+}
+
+.titlebox h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media (max-width:768px) {
+    .info {
+        padding: 5% 5%;
+        width: 70%;
+        margin: 10% auto;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .glass {
+        background: rgba(255, 255, 255, 0.188);
+        box-shadow: 0 8px 32px 0 rgba(78, 90, 255, 0.568);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .heading-1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+        color: #ffffff;
+        text-shadow: rgb(0, 0, 0) 0em 0.025em 0.05em;
+        margin-bottom: 5%;
+    }
+
+    .titlebox {
+        width: 60vw;
+        margin: -1% auto 10% auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'poppins', sans-serif;
+        background: linear-gradient(60deg, rgba(159, 151, 191, 0.705) 0%, rgb(154, 194, 247) 100%);
+        color: white;
+        padding: 0.5rem 1rem 1rem 1rem !important;
+        box-shadow: 0 4px 30px rgb(45, 160, 255);
+        border-radius: 20px;
+    }
+
+    .titlebox h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin: 0 0 0.5rem 0;
+        padding: 0;
+    }
+
+    .titlebox h2 {
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+    }
 }

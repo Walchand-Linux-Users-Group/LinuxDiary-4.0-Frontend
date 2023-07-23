@@ -2,12 +2,13 @@ import React from 'react'
 
 const Wargames = () => {
   return (
-      <div className='info glass wargames'>
-        <img src="" alt="" />
+      <div className='info session glass wargames'>
+        
             <div className='heading-1'>Wargames</div>
       <img
 
-        src="./images/Wargames.png"
+        // src="./images/Wargames.png"
+        src="https://i.ibb.co/SfgRzK9/wargames.gif"
         alt="wargames"
         border={0}
         className='logoImg'

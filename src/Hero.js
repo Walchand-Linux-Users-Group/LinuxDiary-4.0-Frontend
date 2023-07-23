@@ -9,7 +9,7 @@ of Simple CSS Waves*/}
           <div className="header">
               {/*Content before waves*/}
               <div className="inner-header flex">
-    
+                  {/* <img src="./images/WLUG_black.png" alt="logo" /> */}
               </div>
               {/*Waves Container*/}
               <div>

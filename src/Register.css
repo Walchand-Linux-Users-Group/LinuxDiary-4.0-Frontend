@@ -1,0 +1,221 @@
+.flex-container {
+    margin: 2% 10%;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    backdrop-filter: blur(3px);
+    border: 1px solid hsla(0, 0%, 100%, .18);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(78, 90, 255, .568);
+    background: hsla(0, 0%, 100%, .188);
+}
+
+
+form {
+    width: 50%;
+    color: white;
+    padding: 30px;
+}
+
+.input-labels {
+    font-weight: 700;
+    text-shadow: 1px 1px 5px #3b3b3b;
+}
+
+.qr-div {
+    width: 30%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(3px);
+    border: 1px solid hsla(0, 0%, 100%, .18);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(78, 90, 255, .568);
+    background: hsla(178, 86%, 61%, 0.062);
+}
+
+.qr {
+    width: 90%;
+    margin: 10%;
+}
+
+.qr-text {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.qr-section {
+
+    display: flex;
+    background-color: rgb(255, 252, 252);
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+select.mySelectArrow {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 22px;
+    cursor: pointer;
+    /* Use a CSS triangle for the arrow */
+    background-image: linear-gradient(45deg, transparent 50%, #081eeb 50%, #41c5f6 100%),
+        linear-gradient(135deg, #41c5f6 0%, #081eeb 50%, transparent 50%);
+    background-position: calc(100% - 20px) center, calc(100% - 10px) center;
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+}
+
+input,
+select {
+    width: 100% !important;
+    margin: 8px;
+    margin-left: 0px;
+    display: block;
+    border: none;
+    background: #ecf0f3;
+    border-radius: 1rem;
+    box-shadow: inset 6px 6px 6px #d7dce0, inset -6px -6px 6px #fff;
+    font-size: 1rem !important;
+    height: 2rem !important;
+    padding: 0.5rem 0 0.5rem 0rem !important;
+    margin-left: -0.5rem !important;
+}
+
+
+select {
+    height: 3rem !important;
+    padding: 0.5rem 1.2rem !important;
+    width: auto;
+}
+
+input[type=submit] {
+    width: auto !important;
+    padding: 0 3rem !important;
+    margin: 2.5rem auto 0rem auto !important;
+    height: 3rem !important;
+    font-size: 1.2rem !important;
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        margin: 3% 5%;
+        margin-bottom: 0;
+        padding: 0;
+
+        display: flex;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: center;
+
+        backdrop-filter: blur(3px);
+        border: 1px solid hsla(0, 0%, 100%, .18);
+        border-radius: 10px;
+        box-shadow: 0 8px 32px 0 rgba(78, 90, 255, .568);
+        background: hsla(0, 0%, 100%, .188);
+    }
+
+    form {
+        width: 100%;
+        color: white;
+        padding: 30px;
+    }
+
+
+    select {
+        padding: 0rem 0 0.5rem 1rem !important;
+        margin-left: -0.5rem !important;
+        width: 100%;
+    }
+
+    .qr-div {
+        width: 90%;
+        margin: 5% 10% 5% 10%;
+    }
+
+    .qr-div {
+        width: 90%;
+    }
+
+    .qr-text p {
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-align: center;
+        z-index: 1;
+    }
+}
+
+/* 
+.flex-container {
+    margin: 3rem;
+    padding: 1.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    backdrop-filter: blur(3px);
+    border: 1px solid hsla(0, 0%, 100%, .18);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(78, 90, 255, .568);
+    background: hsla(0, 0%, 100%, .188);
+}
+
+
+form {
+    width: 40%;
+    min-width: 160px;
+    color: white;
+    padding: 30px;
+}
+
+.input-labels {
+    font-weight: 700;
+    text-shadow: 1px 1px 5px #3b3b3b;
+}
+
+.qr {
+    width: 20rem;
+    margin: 4rem;
+}
+
+input,
+select {
+    width: 100%;
+    margin: 8px;
+    margin-left: 0px;
+    display: block;
+    border: none;
+    background: #ecf0f3;
+    border-radius: 1rem;
+    box-shadow: inset 6px 6px 6px #d7dce0, inset -6px -6px 6px #fff;
+    font-size: 1rem !important;
+    height: 2rem !important;
+    padding: 0.5rem 1.2rem !important;
+}
+
+select {
+    height: 3rem !important;
+    padding: 0.5rem 1.2rem !important;
+    width: 108%;
+}
+
+input[type=submit] {
+    width: auto;
+    padding: 0 3rem !important;
+    margin: 2.5rem auto 0rem auto !important;
+    height: 3rem !important;
+    font-size: 1.2rem !important;
+}*/

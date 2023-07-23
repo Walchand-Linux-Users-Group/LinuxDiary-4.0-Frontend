@@ -138,33 +138,7 @@ const Bubbles = () => {
         <div className="bubble" />
         <div className="bubble" />
       </div>
-      {/* <div className="canvas canvas-6">
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-      </div> */}
+      
     </div>
 
   )
