@@ -27,37 +27,45 @@ form {
 
 .qr-div {
     width: 30%;
-    padding: 0.5%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    /* backdrop-filter: blur(3px);
-    border: 1px solid hsla(0, 0%, 100%, .18);
-    border-radius: 10px;
-    box-shadow: 0 8px 32px 0 rgba(78, 90, 255, .568);
-    background: hsla(178, 86%, 61%, 0.062); */
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
 }
 
 .qr {
-width: 100%;
+    width: 86%;
+    padding: 7%;
 }
-/* 
+
+.qrWithName {
+    width: 70%;
+    position: absolute;
+    bottom: 10;
+    left: 15%;
+    right: 15%;
+}
+
+
 .qr-text {
-padding:0px 4px;
+    padding: 0px 4px;
     font-size: 1.4rem;
     font-weight: 600;
     text-align: center;
     color: #ffffff;
     z-index: 1;
 }
-.qr-text p{
+
+.qr-text p {
     font-size: 0.9rem;
 }
+
 .qr-text2 {
-    font-size: 1.1rem!important;
+    font-size: 1.1rem !important;
     font-weight: 700;
     text-decoration: underline;
 }
+
 .qr-section {
 
     display: flex;
@@ -66,7 +74,7 @@ padding:0px 4px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-} */
+}
 
 select.mySelectArrow {
     -webkit-appearance: none;
@@ -97,14 +105,17 @@ select {
     height: 2rem !important;
     padding: 0.5rem 0 0.5rem 0rem;
 }
-input[type=text],input[type=email],input[type=tel] {
+
+input[type=text],
+input[type=email],
+input[type=tel] {
     padding-left: 3%;
     padding-right: 3%;
 }
 
 select {
     height: 3rem !important;
-    padding: 0.5rem 0.8rem 0.5rem 0.8rem!important;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem !important;
     width: 100%;
 }
 
@@ -149,14 +160,15 @@ input[type=submit] {
         width: 90%;
     }
 
-    /* .qr-text p {
+    .qr-text p {
         font-size: 1rem;
         font-weight: 600;
         text-align: center;
         z-index: 1;
     }
+
     .qr-text2 {
-            font-size: 1.3rem!important;
-            font-weight: 700!important;
-        } */
+        font-size: 1.3rem !important;
+        font-weight: 700 !important;
+    }
 }
