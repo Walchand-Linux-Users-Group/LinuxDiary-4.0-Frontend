@@ -333,8 +333,8 @@ const Register = () => {
                     <div className='qr-text-section'>
                         <p className='qr-text-heading'>Scan <span>/ Tap </span>QR to pay</p>
                         <p className='qr-text-info'>
-                            UPI ID: dattnareshgangji21@okaxis<br /><br />
-                            <span>Amount: ₹‎199.00</span></p>
+                            UPI ID: smit2003.sb@okicici<br /><br />
+                            <span>Amount: ₹‎1.00</span></p>
                     </div>
                     <div style={placeholderVisibility}>
                         <p className='qr-text-placeholder'>Enter Name <br /> to view QR</p>
