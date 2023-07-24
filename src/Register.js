@@ -12,7 +12,8 @@ const API = axios.create({
 let qr_img_src = "./images/QR_0.png"
 const Register = () => {
     const [qrLink, setqrLink] = useState("")
-    const [isVisible, setisVisible] = useState({ visibility: 'hidden' })
+    const [qrVisibility, setqrVisibility] = useState({ display: "none" })
+    const [placeholderVisibility, setplaceholderVisibility] = useState({ display: "block" })
 
     const [isLoading, setisLoading] = useState(false)
     // const [isLoading, setisLoading] = useState(false)
@@ -45,12 +46,15 @@ const Register = () => {
         value = value.trim()
         if (value.length > 0) {
             qr_img_src = "./images/QR_2.png"
-            setisVisible({ visibility: 'visible' })
+            setqrVisibility({ display: "block" })
+            setplaceholderVisibility({ display: "none" })
             setqrLink("upi://pay?pa=dattnareshgangji21@okaxis&pn=Datta%20Gangji&am=199.00&cu=INR&aid=uGICAgID3ib3mVA&tn=" + value)
         }
         else {
             qr_img_src = "./images/QR_0.png"
             setqrLink("")
+            setqrVisibility({ display: "none" })
+            setplaceholderVisibility({ display: "block" })
         }
         setFormData((prevFormData) => ({
             ...prevFormData,
@@ -319,22 +323,25 @@ const Register = () => {
                 <input type="submit" defaultValue="REGISTER" className='btn-hover color-5' />
             </form>
             <div className='qr-div'>
-                    {/* <img src={qr_img_src} className="qr" />
+                {/* <img src={qr_img_src} className="qr" />
                 <a href={qrLink}>
-                    <QRCode value={qrLink} className='qrWithName'></QRCode>
-                </a> */}
+                <QRCode value={qrLink} className='qrWithName'></QRCode>
+            </a> */}
                 <div className='qr-section'>
-                    <div className='qr-text'>
-                        <p className='qr-text2'>Scan to pay</p>
-                        <p>
+                    <div className='qr-text-section'>
+                        <p className='qr-text-heading'>Scan <span>/ Tap </span>QR to pay</p>
+                        <p className='qr-text-info'>
                             UPI ID: dattnareshgangji21@okaxis<br /><br />
-                            Amount: ₹‎199.00</p>
+                            <span>Amount: ₹‎199.00</span></p>
                     </div>
-                    <div style={isVisible}>
+                    <div style={placeholderVisibility}>
+                        <p className='qr-text-placeholder'>Enter Name <br /> to view QR</p>
+                    </div>
+                    <div style={qrVisibility}>
                         <a href={qrLink}>
                             {/* <img src={qrLink} className="qr" /> */}
                             <QRCode value={qrLink} className='qr'>
-                                </QRCode></a>
+                            </QRCode></a>
                     </div>
                 </div>
             </div>

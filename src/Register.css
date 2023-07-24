@@ -33,48 +33,68 @@ form {
     overflow: hidden;
 }
 
-.qr {
-    width: 86%;
-    padding: 7%;
+.qr-section {
+
+    display: flex;
+    background-color: rgb(255, 252, 252);
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.qrWithName {
-    width: 70%;
-    position: absolute;
-    bottom: 10;
-    left: 15%;
-    right: 15%;
-}
-
-
-.qr-text {
+.qr-text-section {
     padding: 0px 4px;
-    font-size: 1.4rem;
-    font-weight: 600;
     text-align: center;
     color: #ffffff;
     z-index: 1;
 }
 
-.qr-text p {
-    font-size: 0.9rem;
+
+.qr-text-heading {
+    font-size: 1.8rem !important;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    /* text-shadow: 0px 1px 2px #afdddf; */
 }
 
-.qr-text2 {
+.qr-text-heading span {
+    display: none;
+}
+
+.qr-text-info {
+    font-size: 0.9rem !important;
+    font-weight: 500;
+}
+
+.qr-text-info span {
     font-size: 1.1rem !important;
-    font-weight: 700;
-    text-decoration: underline;
+    font-weight: 600;
 }
 
-.qr-section {
-
-    display: flex;
-    background-color: rgb(255, 252, 252);
-    border-radius: 10px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.qr-text-placeholder {
+    padding: 0.5rem 1rem;
+    color: rgb(255, 87, 87);
+    text-align: center;
+    font-size: 2rem;
 }
+
+.qr {
+    width: 86%;
+    padding: 0 7% 7% 7%;
+}
+
+/* .qrWithName {
+    width: 70%;
+    position: absolute;
+    bottom: 10;
+    left: 15%;
+    right: 15%;
+} */
+
+
+
 
 select.mySelectArrow {
     -webkit-appearance: none;
@@ -85,8 +105,10 @@ select.mySelectArrow {
     font-size: 22px;
     cursor: pointer;
     /* Use a CSS triangle for the arrow */
-    background-image: linear-gradient(45deg, transparent 50%, #081eeb 50%, #41c5f6 100%),
-        linear-gradient(135deg, #41c5f6 0%, #081eeb 50%, transparent 50%);
+    /* background-image: linear-gradient(45deg, transparent 50%, #081eeb 50%, #41c5f6 100%),
+        linear-gradient(135deg, #41c5f6 0%, #081eeb 50%, transparent 50%); */
+    background-image: linear-gradient(45deg, transparent 50%, #000000 50%, #5e6669 100%),
+        linear-gradient(135deg, #5e6669 0%, #000000 50%, transparent 50%);
     background-position: calc(100% - 20px) center, calc(100% - 10px) center;
     background-size: 10px 10px;
     background-repeat: no-repeat;
@@ -151,24 +173,56 @@ input[type=submit] {
         padding: 30px;
     }
 
+
     .qr-div {
         width: 90%;
         margin: 5% 10% 5% 10%;
     }
 
-    .qr-div {
-        width: 90%;
+    .qr-section {
+
+        display: flex;
+        background-color: rgb(255, 252, 252);
+        border-radius: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    .qr-text p {
-        font-size: 1rem;
-        font-weight: 600;
+    .qr-text-section {
+        padding: 0px 4px;
         text-align: center;
+        color: #ffffff;
         z-index: 1;
     }
 
-    .qr-text2 {
-        font-size: 1.3rem !important;
-        font-weight: 700 !important;
+
+    .qr-text-heading {
+        font-size: 1.4rem !important;
+        font-weight: 600;
+        font-family: 'Roboto', sans-serif;
+        /* text-shadow: 0px 1px 2px #afdddf; */
     }
+
+    .qr-text-heading span {
+        display: inline;
+    }
+
+    .qr-text-info {
+        font-size: 0.9rem !important;
+        font-weight: 500;
+    }
+
+    .qr-text-info span {
+        font-size: 1.1rem !important;
+        font-weight: 600;
+    }
+
+    .qr-text-placeholder {
+        padding: 0.5rem 0.5rem;
+        color: rgb(255, 87, 87);
+        text-align: center;
+        font-size: 2rem;
+    }
+
 }
