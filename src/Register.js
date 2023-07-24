@@ -305,8 +305,8 @@ const Register = () => {
                             Amount: ₹‎199.00</p>
                     </div>
                     <div>
-
-                        <img src="./images/qr.png" className="qr" />
+                        <a href="upi://pay?pa=dattnareshgangji21@okaxis&pn=Datta%20Gangji&am=199.00&cu=INR&aid=uGICAgID3ib3mVA">
+                            <img src="./images/qr.png" className="qr" /></a>
                     </div>
                 </div>
             </div>
