@@ -48,8 +48,8 @@ const Register = () => {
             qr_img_src = "./images/QR_2.png"
             setqrVisibility({ display: "block" })
             setplaceholderVisibility({ display: "none" })
-            // setqrLink("upi://pay?pa=utkarsha.1977.usb@okhdfcbank&pn=Utkarsha%20Butle&am=1.00&cu=INR&aid=uGICAgIDNq4GgNA&tn=LD%2D" + value)
-            setqrLink("upi://pay?pa=smit2003.sb@okicici&pn=Smit%20Butle&am=1.00&cu=INR&tn=LD%2D" + value)
+            // setqrLink("upi://pay?pa=utkarsha.1977.usb@okhdfcbank&pn=Utkarsha%20Butle&am=1.00&cu=INR&tn=LD%2D" + encodeURI(value))
+            setqrLink("upi://pay?pa=smit2003.sb@okicici&pn=Smit%20Butle&am=1.00&cu=INR&aid=uGICAgIDAhMyvVQ&tn=LD%2D" + encodeURI(value))
 
         }
         else {
