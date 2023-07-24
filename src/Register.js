@@ -48,7 +48,7 @@ const Register = () => {
             qr_img_src = "./images/QR_2.png"
             setqrVisibility({ display: "block" })
             setplaceholderVisibility({ display: "none" })
-            setqrLink("upi://pay?pa=dattnareshgangji21@okaxis&pn=Datta%20Gangji&am=199.00&cu=INR&aid=uGICAgID3ib3mVA&tn=LD4%2D"+value)
+            setqrLink("upi://pay?pa=dattnareshgangji21@okaxis&pn=Datta%20Gangji&am=199.00&cu=INR&aid=uGICAgID3ib3mVA&tn=LD4%2D" + value)
         }
         else {
             qr_img_src = "./images/QR_0.png"
@@ -330,7 +330,8 @@ const Register = () => {
             </a> */}
                 <div className='qr-section'>
                     <div className='qr-text-section'>
-                        <p className='qr-text-heading'>Scan <span>/ Tap </span>QR to pay</p>
+                        {/* <p className='qr-text-heading'>Scan <span>/ Tap </span>QR to pay</p> */}
+                        <p className='qr-text-heading'>Scan QR to pay</p>
                         <p className='qr-text-info'>
                             UPI ID: dattnareshgangji21@okaxis<br /><br />
                             <span>Amount: ₹‎199.00</span></p>
@@ -341,11 +342,11 @@ const Register = () => {
                     {/* <div style={qrVisibility}> */}
                     <div>
                         {/* <a href={qrLink}> */}
-                        <a href="upi://pay?pa=dattnareshgangji21@okaxis&pn=Datta%20Gangji&am=1.00&cu=INR&aid=uGICAgID3ib3mVA">
-                            <img src="./images/qr.png" className="qr2" />
-                            {/* <QRCode value={qrLink} className='qr'>
+                        {/* <a href="upi://pay?pa=dattnareshgangji21@okaxis&pn=Datta%20Gangji&am=1.00&cu=INR&aid=uGICAgID3ib3mVA"> */}
+                        <img src="./images/qr.png" className="qr2" />
+                        {/* <QRCode value={qrLink} className='qr'>
                             </QRCode>*/}
-                        </a> 
+                        {/* </a>  */}
                     </div>
                 </div>
             </div>
