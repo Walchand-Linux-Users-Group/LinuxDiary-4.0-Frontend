@@ -9,7 +9,7 @@ const API = axios.create({
     baseURL: 'https://linuxdiary-4-0-backend.onrender.com',
     // baseURL: 'https://localhost:4000',
 })
-
+let qr_img_src = "./images/QR_0.png"
 const Register = () => {
 
     const [isLoading, setisLoading] = useState(false)
@@ -30,6 +30,22 @@ const Register = () => {
         event.preventDefault()
 
         const { name, value } = event.target
+        setFormData((prevFormData) => ({
+            ...prevFormData,
+            [name]: value,
+        }))
+        console.log(formData)
+    }
+    const handleChangeName = (event) => {
+        event.preventDefault()
+
+        const { name, value } = event.target
+        if(value.length>0){
+            qr_img_src = "./images/QR_2.png"
+        }
+        else{
+            qr_img_src = "./images/QR_0.png"
+        }
         setFormData((prevFormData) => ({
             ...prevFormData,
             [name]: value,
@@ -178,11 +194,11 @@ const Register = () => {
                 </label>
                 <input
                     required=""
-                    placeholder="    Your Name"
+                    placeholder="Your Name"
                     name="name"
                     id="name"
                     type="text"
-                    onChange={handleChange}
+                    onChange={handleChangeName}
                 />
                 <label htmlFor="email" className="input-labels">
                     {" "}
@@ -190,7 +206,7 @@ const Register = () => {
                 </label>
                 <input
                     required=""
-                    placeholder="    Your Email"
+                    placeholder="Your Email"
                     name="email"
                     id="email"
                     type="email"
@@ -203,7 +219,7 @@ const Register = () => {
                 </label>
                 <input
                     required=""
-                    placeholder="    Your Phone Number"
+                    placeholder="Your Phone Number"
                     name="phone"
                     id="phone"
                     type="tel"
@@ -216,7 +232,7 @@ const Register = () => {
                 </label>
                 <input
                     required=""
-                    placeholder="    Your College Name"
+                    placeholder="Your College Name"
                     name="collegeName"
                     id="collegeName"
                     type="text"
@@ -234,8 +250,8 @@ const Register = () => {
                         <option value="" disabled selected>
                             Select your option
                         </option>
-                        <option value="CS">Computer Science Engineering / Computer Engineering</option>
-                        <option value="IT">Information Technology Engineering</option>
+                        <option value="CS">Computer Science</option>
+                        <option value="IT">Information Technology</option>
                         <option value="OTHERS">Others</option>
                     </select>
                 </div>
@@ -276,7 +292,7 @@ const Register = () => {
                 </label>
                 <input
                     required=""
-                    placeholder="    Payment Transaction ID"
+                    placeholder="Payment Transaction ID"
                     name="transactionId"
                     id="transactionId"
                     type="text"
@@ -288,7 +304,7 @@ const Register = () => {
                 </label>
                 <input
                     required=""
-                    placeholder="    Referal Code"
+                    placeholder="Referal Code"
                     name="referalCode"
                     id="referalCode"
                     type="text"
@@ -297,7 +313,9 @@ const Register = () => {
                 <input type="submit" defaultValue="REGISTER" className='btn-hover color-5' />
             </form>
             <div className='qr-div'>
-                <div className='qr-section'>
+                <a href="upi://pay?pa=dattnareshgangji21@okaxis&pn=Datta%20Gangji&am=199.00&cu=INR&aid=uGICAgID3ib3mVA">
+                    <img src={qr_img_src} className="qr" /></a>
+                {/* <div className='qr-section'>
                     <div className='qr-text'>
                         <p className='qr-text2'>Scan to pay</p>
                         <p>
@@ -308,7 +326,7 @@ const Register = () => {
                         <a href="upi://pay?pa=dattnareshgangji21@okaxis&pn=Datta%20Gangji&am=199.00&cu=INR&aid=uGICAgID3ib3mVA">
                             <img src="./images/qr.png" className="qr" /></a>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
 
