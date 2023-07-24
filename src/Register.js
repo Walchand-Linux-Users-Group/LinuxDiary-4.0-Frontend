@@ -48,7 +48,7 @@ const Register = () => {
             qr_img_src = "./images/QR_2.png"
             setqrVisibility({ display: "block" })
             setplaceholderVisibility({ display: "none" })
-            setqrLink("upi://pay?pa=dattnareshgangji21@okaxis&pn=Datta%20Gangji&am=199.00&cu=INR&aid=uGICAgID3ib3mVA&tn=" + value)
+            setqrLink("upi://pay?pa=dattnareshgangji21@okaxis&pn=Datta%20Gangji&am=199.00&cu=INR&aid=uGICAgID3ib3mVA&tn=LD4%2D"+value)
         }
         else {
             qr_img_src = "./images/QR_0.png"
