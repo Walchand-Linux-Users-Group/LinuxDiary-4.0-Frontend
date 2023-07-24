@@ -208,7 +208,8 @@ const Register = () => {
                     name="name"
                     id="name"
                     type="text"
-                    onChange={handleChangeName}
+                    // onChange={handleChangeName}
+                    onChange={handleChange}
                 />
                 <label htmlFor="email" className="input-labels">
                     {" "}
@@ -334,14 +335,17 @@ const Register = () => {
                             UPI ID: dattnareshgangji21@okaxis<br /><br />
                             <span>Amount: ₹‎199.00</span></p>
                     </div>
-                    <div style={placeholderVisibility}>
+                    {/* <div style={placeholderVisibility}>
                         <p className='qr-text-placeholder'>Enter Name <br /> to view QR</p>
-                    </div>
-                    <div style={qrVisibility}>
-                        <a href={qrLink}>
-                            {/* <img src={qrLink} className="qr" /> */}
-                            <QRCode value={qrLink} className='qr'>
-                            </QRCode></a>
+                    </div> */}
+                    {/* <div style={qrVisibility}> */}
+                    <div>
+                        {/* <a href={qrLink}> */}
+                        <a href="upi://pay?pa=dattnareshgangji21@okaxis&pn=Datta%20Gangji&am=1&tn=">
+                            <img src="./images/qr.png" className="qr" />
+                            {/* <QRCode value={qrLink} className='qr'>
+                            </QRCode>*/}
+                        </a> 
                     </div>
                 </div>
             </div>
