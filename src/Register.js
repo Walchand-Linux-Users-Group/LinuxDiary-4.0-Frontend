@@ -3,7 +3,7 @@ import './Register.css'
 import axios from 'axios'
 import { useState } from 'react'
 import swal from 'sweetalert2'
-
+import QRCode from 'react-qr-code'
 
 const API = axios.create({
     baseURL: 'https://linuxdiary-4-0-backend.onrender.com',
@@ -11,6 +11,7 @@ const API = axios.create({
 })
 let qr_img_src = "./images/QR_0.png"
 const Register = () => {
+    const [qrLink, setqrLink] = useState("upi://pay?pa=dattnareshgangji21@okaxis&pn=Datta%20Gangji&am=199.00&cu=INR&aid=uGICAgID3ib3mVA")
 
     const [isLoading, setisLoading] = useState(false)
     // const [isLoading, setisLoading] = useState(false)
@@ -39,12 +40,17 @@ const Register = () => {
     const handleChangeName = (event) => {
         event.preventDefault()
 
-        const { name, value } = event.target
-        if(value.length>0){
+        let { name, value } = event.target
+        value = value.trim()
+        if (value.length > 0) {
             qr_img_src = "./images/QR_2.png"
+            setqrLink("upi://pay?pa=dattnareshgangji21@okaxis&pn=Datta%20Gangji&am=199.00&cu=INR&aid=uGICAgID3ib3mVA&tn=" + value)
         }
-        else{
+        else {
             qr_img_src = "./images/QR_0.png"
+            setqrLink("upi://pay?pa=dattnareshgangji21@okaxis&pn=Datta%20Gangji&am=199.00&cu=INR&aid=uGICAgID3ib3mVA")
+
+
         }
         setFormData((prevFormData) => ({
             ...prevFormData,
@@ -313,8 +319,10 @@ const Register = () => {
                 <input type="submit" defaultValue="REGISTER" className='btn-hover color-5' />
             </form>
             <div className='qr-div'>
-                <a href="upi://pay?pa=dattnareshgangji21@okaxis&pn=Datta%20Gangji&am=199.00&cu=INR&aid=uGICAgID3ib3mVA">
-                    <img src={qr_img_src} className="qr" /></a>
+                <a href={qrLink}>
+                    <img src={qr_img_src} className="qr" />
+                    <QRCode value={qrLink}></QRCode>
+                </a>
                 {/* <div className='qr-section'>
                     <div className='qr-text'>
                         <p className='qr-text2'>Scan to pay</p>
