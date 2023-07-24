@@ -342,7 +342,7 @@ const Register = () => {
                     <div>
                         {/* <a href={qrLink}> */}
                         <a href="upi://pay?pa=dattnareshgangji21@okaxis&pn=Datta%20Gangji&am=1.00&cu=INR&aid=uGICAgID3ib3mVA&tn=Linux_Diary">
-                            <img src="./images/qr.png" className="qr" />
+                            <img src="./images/qr.png" className="qr2" />
                             {/* <QRCode value={qrLink} className='qr'>
                             </QRCode>*/}
                         </a> 

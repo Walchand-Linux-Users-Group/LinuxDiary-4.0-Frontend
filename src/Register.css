@@ -84,6 +84,10 @@ form {
     width: 86%;
     padding: 0 7% 7% 7%;
 }
+.qr2 {
+    width: 76%;
+    padding: 5% 12% 12% 12%;
+}
 
 /* .qrWithName {
     width: 70%;
