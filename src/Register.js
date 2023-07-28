@@ -3,17 +3,19 @@ import './Register.css'
 import axios from 'axios'
 import { useState } from 'react'
 import swal from 'sweetalert2'
-import QRCode from 'react-qr-code'
+
+import { ProgressBar } from 'react-loader-spinner'
+// import QRCode from 'react-qr-code'
 
 const API = axios.create({
     baseURL: 'https://linuxdiary-4-0-backend.onrender.com',
     // baseURL: 'https://localhost:4000',
 })
-let qr_img_src = "./images/QR_0.png"
+// let qr_img_src = "./images/QR_0.png"
 const Register = () => {
-    const [qrLink, setqrLink] = useState("")
-    const [qrVisibility, setqrVisibility] = useState({ display: "none" })
-    const [placeholderVisibility, setplaceholderVisibility] = useState({ display: "block" })
+    // const [qrLink, setqrLink] = useState("")
+    // const [qrVisibility, setqrVisibility] = useState({ display: "none" })
+    // const [placeholderVisibility, setplaceholderVisibility] = useState({ display: "block" })
 
     const [isLoading, setisLoading] = useState(false)
     // const [isLoading, setisLoading] = useState(false)
@@ -39,29 +41,29 @@ const Register = () => {
         }))
         console.log(formData)
     }
-    const handleChangeName = (event) => {
-        event.preventDefault()
+    // const handleChangeName = (event) => {
+    //     event.preventDefault()
 
-        let { name, value } = event.target
-        value = value.trim()
-        if (value.length > 0) {
-            qr_img_src = "./images/QR_2.png"
-            setqrVisibility({ display: "block" })
-            setplaceholderVisibility({ display: "none" })
-            setqrLink("upi://pay?pa=dattnareshgangji21@okaxis&pn=Datta%20Gangji&am=199.00&cu=INR&aid=uGICAgID3ib3mVA&tn=LD4%2D" + value)
-        }
-        else {
-            qr_img_src = "./images/QR_0.png"
-            setqrLink("")
-            setqrVisibility({ display: "none" })
-            setplaceholderVisibility({ display: "block" })
-        }
-        setFormData((prevFormData) => ({
-            ...prevFormData,
-            [name]: value,
-        }))
-        console.log(formData)
-    }
+    //     let { name, value } = event.target
+    //     value = value.trim()
+    //     if (value.length > 0) {
+    //         qr_img_src = "./images/QR_2.png"
+    //         setqrVisibility({ display: "block" })
+    //         setplaceholderVisibility({ display: "none" })
+    //         setqrLink("upi://pay?pa=dattnareshgangji21@okaxis&pn=Datta%20Gangji&am=199.00&cu=INR&aid=uGICAgID3ib3mVA&tn=LD4%2D" + value)
+    //     }
+    //     else {
+    //         qr_img_src = "./images/QR_0.png"
+    //         setqrLink("")
+    //         setqrVisibility({ display: "none" })
+    //         setplaceholderVisibility({ display: "block" })
+    //     }
+    //     setFormData((prevFormData) => ({
+    //         ...prevFormData,
+    //         [name]: value,
+    //     }))
+    //     console.log(formData)
+    // }
     const handleReset = (event) => {
         event.preventDefault()
         event.target.reset()
@@ -321,7 +323,24 @@ const Register = () => {
                     type="text"
                     onChange={handleChange}
                 />
-                <input type="submit" defaultValue="REGISTER" className='btn-hover color-5' />
+                <div className='submitSection'>
+                    {!isLoading && (<div className='submitButton'>
+                        <input type="submit" defaultValue="REGISTER" className='btn-hover color-5' />
+                    </div>
+                    )}
+                    {isLoading && (
+                        <ProgressBar
+                            height="160"
+                            width="auto"
+                            ariaLabel="progress-bar-loading"
+                            wrapperStyle={{}}
+                            wrapperClass="progress-bar-wrapper"
+                            borderColor='#00d12d'
+                            barColor='#ffffff'
+                        />
+                    )}
+
+                </div>
             </form>
             <div className='qr-div'>
                 {/* <img src={qr_img_src} className="qr" />
@@ -343,7 +362,7 @@ const Register = () => {
                     <div>
                         {/* <a href={qrLink}> */}
                         {/* <a href="upi://pay?pa=dattnareshgangji21@okaxis&pn=Datta%20Gangji&am=1.00&cu=INR&aid=uGICAgID3ib3mVA"> */}
-                        <img src="./images/qr.png" className="qr2" />
+                        <img src="./images/qr.png" className="qr2" alt='qr' />
                         {/* <QRCode value={qrLink} className='qr'>
                             </QRCode>*/}
                         {/* </a>  */}

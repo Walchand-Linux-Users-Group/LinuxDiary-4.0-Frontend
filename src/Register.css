@@ -97,9 +97,12 @@ form {
     right: 15%;
 } */
 
-
-
-
+.submitSection{
+    height: 120px;
+}
+.submitButton{
+    padding: 16px 24px 32px 24px;
+}
 select.mySelectArrow {
     -webkit-appearance: none;
     -moz-appearance: none;
