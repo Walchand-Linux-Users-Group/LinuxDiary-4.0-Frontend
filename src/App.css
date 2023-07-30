@@ -1,4 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* .colorsec {
+    height: auto;
+        background: linear-gradient(180deg, #318CFE 0%, #318CFE 20%, #004eae 50%, rgb(0, 83, 185) 70%, #0050B4 90%, #0050B4 100%);
+
+} */
+
+.canvas {
+  height: 100%;
+  width: 100vw;
+  background: linear-gradient(180deg, #318CFE 0%, #318CFE 20%, #004eae 50%, rgb(0, 83, 185) 70%, #0050B4 90%, #0050B4 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* .bubble {
+    display: block;
+    border-radius: 100%;
+    opacity: 0.8;
+    position: absolute;
+} */
+.bubble {
+  z-index: 0;
+  display: block;
+  border-radius: 100%;
+  opacity: 0.8;
+  position: absolute;
+  background: radial-gradient(ellipse at center, #ffffff 0%, #a4d5ff 46%, rgb(133, 186, 255) 100%) !important
+}
+
 
 body {
   margin: 0;
@@ -43,9 +72,11 @@ p {
 }
 
 .titlebox {
-  padding-top: 1.7rem !important;
+  z-index: 1;
+  position: relative;
+  padding-top: 1.5rem !important;
   width: 35vw;
-  margin: -2.5% auto 4% auto !important;
+  margin: 5% auto 2% auto !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,7 +84,7 @@ p {
   /* background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(76, 149, 247, 1) 100%); */
   background: white !important;
   color: white;
-  padding: 4% 10%;
+  padding: 4% 8%;
   box-shadow: 0 4px 30px rgba(76, 149, 247, 1) !important;
   border-radius: 30px !important;
 }

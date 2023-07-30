@@ -1,8 +1,9 @@
 .flex-container {
     margin: 2% 10%;
     padding: 20px;
-
+    position: relative;
     display: flex;
+    z-index: 2;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap-reverse;
