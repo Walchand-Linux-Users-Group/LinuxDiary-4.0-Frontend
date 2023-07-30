@@ -313,13 +313,13 @@ const Register = () => {
                 />
                 <label htmlFor="referalCode" className="input-labels">
                     {" "}
-                    Referal Code{" "}
+                    Referral Code{" "}
                 </label>
                 <input
                     required=""
                     placeholder="Referral Code"
-                    name="referralCode"
-                    id="referralCode"
+                    name="referalCode"
+                    id="referalCode"
                     type="text"
                     onChange={handleChange}
                 />
