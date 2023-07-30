@@ -317,9 +317,9 @@ const Register = () => {
                 </label>
                 <input
                     required=""
-                    placeholder="Referal Code"
-                    name="referalCode"
-                    id="referalCode"
+                    placeholder="Referral Code"
+                    name="referralCode"
+                    id="referralCode"
                     type="text"
                     onChange={handleChange}
                 />
