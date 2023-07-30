@@ -30,7 +30,7 @@ const Rewards = () => {
                 </div>
             </div>
             <div className='register'>
-                <button className="btn-hover color-9" onClick={handleRegister} id='register-button'>Register Now</button>
+                <button className="btn-hover color-1" onClick={handleRegister} id='register-button'>Register Now</button>
             </div>
             <div>
                 <Register />
