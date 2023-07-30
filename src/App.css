@@ -29,6 +29,7 @@ p {
   font-size: 1rem;
   color: #333333;
 }
+
 .titlebox img {
   padding-right: 1.2rem;
   display: block;
@@ -40,8 +41,9 @@ p {
   z-index: 0;
   margin-bottom: 0rem;
 }
+
 .titlebox {
-  padding-top: 1.7rem!important;
+  padding-top: 1.7rem !important;
   width: 35vw;
   margin: -2.5% auto 4% auto !important;
   display: flex;
@@ -102,8 +104,8 @@ p {
 
 
 
-@media (max-width: 768px) {
-  
+@media only screen and (max-width: 768px) {
+
   h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;

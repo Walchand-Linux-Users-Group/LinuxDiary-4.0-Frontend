@@ -72,74 +72,97 @@
     overflow: hidden;
 }
 
-@media (max-width:768px) {
+@media only screen and (max-width: 2560px) {
+    .canvas-4{
+        display: none;
+    }
+    .canvas-5{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .canvas-4{
+        display: none;
+    }
+    .canvas-5{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .canvas-5{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:768px) {
     .colorsec {
-            height: auto;
-            background: linear-gradient(180deg, #318CFE 0%, #318CFE 20%, #004eae 50%, rgb(0, 83, 185) 70%, #0050B4 90%, #0050B4 100%);
-    
-        }
-    
-        .canvas {
-            padding: 0;
-            margin: 0;
-            width: 110% !important;
-            left: -10% !important;
-            z-index: 0;
-            overflow: hidden;
-            /* background: #318CFE; */
-        }
-    
-        .bubble {
-            display: fixed;
-            z-index: -9999;
-            border-radius: 100%;
-            opacity: 0.8;
-            position: absolute;
-            background: radial-gradient(ellipse at center, #ffffff 0%, #a4d5ff 46%, rgb(133, 186, 255) 100%) !important
-        }
-    
-        .canvas-1 {
-            height: 120vh;
-            width: 100vw;
-            /* background: linear-gradient(to bottom, #edfffa 0%, #31c5d6 100%); */
-            position: absolute;
-            top: 35vh;
-            left: 0%;
-            overflow: hidden;
-        }
-    
-        .canvas-2 {
-            height: 150vh;
-            width: 100vw;
-            /* background: linear-gradient(to bottom, #edfffa 0%, #31c5d6 100%); */
-            position: absolute;
-            top: 160vh;
-            left: 0%;
-            right: 100%;
-            overflow: hidden;
-        }
-    
-        .canvas-3 {
-            height: 160vh;
-            width: 100vw;
-            /* background: linear-gradient(to bottom, #edfffa 0%, #31c5d6 100%); */
-            position: absolute;
-            top: 300vh;
-            left: 0%;
-            right: 100%;
-            overflow: hidden;
-        }
-        .canvas-4 {
-            height: 120vh;
-            width: 100vw;
-            /* background: linear-gradient(to bottom, #edfffa 0%, #31c5d6 100%); */
-            position: absolute;
-            top: 460vh;
-            left: 0%;
-            right: 100%;
-            overflow: hidden;
-        }
-    
+        height: auto;
+        background: linear-gradient(180deg, #318CFE 0%, #318CFE 20%, #004eae 50%, rgb(0, 83, 185) 70%, #0050B4 90%, #0050B4 100%);
+
+    }
+
+    .canvas {
+        padding: 0;
+        margin: 0;
+        width: 110% !important;
+        left: -10% !important;
+        z-index: 0;
+        overflow: hidden;
+        /* background: #318CFE; */
+    }
+
+    .bubble {
+        display: fixed;
+        z-index: -9999;
+        border-radius: 100%;
+        opacity: 0.8;
+        position: absolute;
+        background: radial-gradient(ellipse at center, #ffffff 0%, #a4d5ff 46%, rgb(133, 186, 255) 100%) !important
+    }
+
+    .canvas-1 {
+        height: 120vh;
+        width: 100vw;
+        /* background: linear-gradient(to bottom, #edfffa 0%, #31c5d6 100%); */
+        position: absolute;
+        top: 35vh;
+        left: 0%;
+        overflow: hidden;
+    }
+
+    .canvas-2 {
+        height: 150vh;
+        width: 100vw;
+        /* background: linear-gradient(to bottom, #edfffa 0%, #31c5d6 100%); */
+        position: absolute;
+        top: 160vh;
+        left: 0%;
+        right: 100%;
+        overflow: hidden;
+    }
+
+    .canvas-3 {
+        height: 160vh;
+        width: 100vw;
+        /* background: linear-gradient(to bottom, #edfffa 0%, #31c5d6 100%); */
+        position: absolute;
+        top: 300vh;
+        left: 0%;
+        right: 100%;
+        overflow: hidden;
+    }
+
+    .canvas-4 {
+        height: 120vh;
+        width: 100vw;
+        /* background: linear-gradient(to bottom, #edfffa 0%, #31c5d6 100%); */
+        position: absolute;
+        top: 460vh;
+        left: 0%;
+        right: 100%;
+        overflow: hidden;
+    }
+
 }
 
 

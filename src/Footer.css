@@ -73,9 +73,10 @@
     height: 100%;
 }
 
-.padding1rem{
+.padding1rem {
     padding: 0.5rem 1rem;
 }
+
 .stay_tuned {
     text-align: center;
     font-weight: 800;
@@ -136,24 +137,26 @@
     display: none;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .imgg img {
-            display: block;
-            bottom: 0;
-            width: 100%;
-            margin-left: 0;
-            margin-top: 5%;
-            height: auto;
-            object-fit: contain;
-            position: relative;
-            z-index: 0;
-            margin-bottom: 0%;
-overflow:hidden;
-        }
-    
-    .ics,.stay_tuned {  
-            margin: 0.5rem;
-        }
+        display: block;
+        bottom: 0;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 5%;
+        height: auto;
+        object-fit: contain;
+        position: relative;
+        z-index: 0;
+        margin-bottom: 0%;
+        overflow: hidden;
+    }
+
+    .ics,
+    .stay_tuned {
+        margin: 0.5rem;
+    }
+
     .dash {
         display: none;
     }
@@ -179,6 +182,7 @@ overflow:hidden;
         gap: 0.5rem;
         padding: 1rem 0.5rem;
     }
+
     .wlug-logo {
         display: none;
     }
@@ -187,16 +191,17 @@ overflow:hidden;
         font-size: 1.4rem;
     }
 
-    .copyright2{
+    .copyright2 {
         display: block;
     }
-    .copyright2 p{
-        font-size: 0.5rem!important;
+
+    .copyright2 p {
+        font-size: 0.5rem !important;
     }
 }
 
 /* 
-@media only screen and (max-width: 680px) {
+@media only screen and  only screen and (max-width: 680px) {
     .footer {
         justify-content: space-between;
         padding: 4rem 3rem;
@@ -228,7 +233,7 @@ overflow:hidden;
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and  only screen and (max-width: 400px) {
     .footer {
         padding: 4rem 2rem;
     }
@@ -251,7 +256,7 @@ overflow:hidden;
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and  only screen and (max-width: 320px) {
     .navli {
         gap: 1em;
     }
