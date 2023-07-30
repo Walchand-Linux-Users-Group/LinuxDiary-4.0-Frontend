@@ -1,8 +1,9 @@
 .flex-container {
     margin: 2% 10%;
     padding: 20px;
-
+    position: relative;
     display: flex;
+    z-index: 2;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap-reverse;
@@ -84,6 +85,7 @@ form {
     width: 86%;
     padding: 0 7% 7% 7%;
 }
+
 .qr2 {
     width: 76%;
     padding: 5% 12% 12% 12%;
@@ -97,12 +99,14 @@ form {
     right: 15%;
 } */
 
-.submitSection{
+.submitSection {
     height: 120px;
 }
-.submitButton{
+
+.submitButton {
     padding: 16px 24px 32px 24px;
 }
+
 select.mySelectArrow {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -156,7 +160,7 @@ input[type=submit] {
     font-size: 1.2rem !important;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .flex-container {
         margin: 3% 5%;
         margin-bottom: 0;

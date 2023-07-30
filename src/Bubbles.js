@@ -1,9 +1,24 @@
 import React from 'react'
 import './Bubbles.css'
+import Hero from './Hero.js';
+import Rewards from './Rewards';
+import Roadmap from './Roadmap';
+import Wargames from './Wargames';
+import Footer from './Footer';
 const Bubbles = () => {
   return (
-    <div className='canvas'>
-      <div className="canvas canvas-1">
+    <>
+      <Hero />
+      <div className='canvas'>
+        <div className='glass titlebox'>
+          <img src="./images/WLUG_black.png" alt="logo" />
+          <div>
+            <h1>Linux Diary 4.0</h1>
+            <h2>#Explore The Linux Realm</h2>
+          </div>
+        </div>
+        <Roadmap />
+        
         <div className="bubble" />
         <div className="bubble" />
         <div className="bubble" />
@@ -29,118 +44,10 @@ const Bubbles = () => {
         <div className="bubble" />
         <div className="bubble" />
         <div className="bubble" />
-      </div>
-      <div className="canvas canvas-2">
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-      </div>
-      <div className="canvas canvas-3">
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-      </div>
-      <div className="canvas canvas-4">
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-      </div>
-      <div className="canvas canvas-5">
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
-      </div>
-      
-    </div>
-
+        <Wargames />
+        <Rewards />
+        <Footer />
+      </div></>
   )
 }
 

@@ -54,7 +54,7 @@ of Simple CSS Waves*/}
           </div>
           {/*Header ends*/}
           {/*Content starts*/}
-          <div className="content flex">
+          <div className="content ">
           </div>
           {/*Content ends*/}
           {/* partial */}

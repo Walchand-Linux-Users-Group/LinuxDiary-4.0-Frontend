@@ -22,6 +22,8 @@
 }
 
 .heading-1 {
+    z-index: 1;
+    position: relative;
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
     font-weight: 600;
@@ -59,7 +61,7 @@
 }
 
 
-@media (max-width:768px) {
+@media only screen and (max-width:768px) {
     .info {
         padding: 5% 5%;
         width: 70%;
