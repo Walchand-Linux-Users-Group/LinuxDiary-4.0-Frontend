@@ -16,7 +16,7 @@ const Roadmap = () => {
             imgsrc="./images/S2.png"
             heading="Session 2: Echo Linux"
             headingColor="#FFEF00"
-            text="With a strong foundation in place, we will dive into the world of Linux, empowering you with comprehensive knowledge of crucial commands, the booting process, text editors, process management, and the seamless integration of pipelining techniques."
+            text="With a strong foundation in place, we will dive into the world of open-source and Linux, empowering you with comprehensive knowledge of crucial commands, the booting process, text editors, process management, and the seamless integration of pipelining techniques."
           />
         </div>
         <div className='flex'>

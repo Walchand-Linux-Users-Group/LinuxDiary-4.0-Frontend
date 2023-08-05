@@ -4,10 +4,12 @@
         background: linear-gradient(180deg, #318CFE 0%, #318CFE 20%, #004eae 50%, rgb(0, 83, 185) 70%, #0050B4 90%, #0050B4 100%);
 
 } */
-
+html {
+  scroll-behavior: smooth;
+}
 .canvas {
   height: 100%;
-  width: 100vw;
+  width: 100%;
   background: linear-gradient(180deg, #318CFE 0%, #318CFE 20%, #004eae 50%, rgb(0, 83, 185) 70%, #0050B4 90%, #0050B4 100%);
   position: relative;
   overflow: hidden;
@@ -133,7 +135,13 @@ p {
   transition: all .4s ease-in-out;
 }
 
-
+.btn-hover:hover {
+  background-position: 100% 0;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -186,20 +194,20 @@ p {
 }
 
 
-.btn-hover:hover {
+/* .btn-hover:hover {
   background-position: 100% 0;
   -moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
-}
+} */
 
 .btn-hover:focus {
   outline: none;
 }
 
 .btn-hover.color-1 {
-  background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+  background-image: linear-gradient(to right, #25aae1, #40e495, #59ddce, #2cd6ec);
   box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }
 

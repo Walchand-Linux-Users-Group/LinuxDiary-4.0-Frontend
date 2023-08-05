@@ -3362,7 +3362,7 @@
     background: radial-gradient(ellipse at center, #b8c6c6 0%, #30b3d3 46%, #20628c 100%);
     width: 51px;
     height: 51px;
-    left: 100vw;
+    left: 100%;
     bottom: 49%;
     animation: move33 infinite 14s;
 }
