@@ -4,7 +4,9 @@
         background: linear-gradient(180deg, #318CFE 0%, #318CFE 20%, #004eae 50%, rgb(0, 83, 185) 70%, #0050B4 90%, #0050B4 100%);
 
 } */
-
+a{
+  cursor: pointer;
+}
 .canvas {
   height: 100%;
   width: 100%;

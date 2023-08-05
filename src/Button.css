@@ -100,7 +100,8 @@
 
 
 .btn-flush {
-    position: relative;
+    position: sticky;
+    position: -webkit-sticky;
         /* padding: 10px 20px; */
         padding: 1.25% 4%;
         margin: 20px;
