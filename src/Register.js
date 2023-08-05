@@ -287,7 +287,7 @@ const Register = () => {
                     </select>
                 </div>
                 <label htmlFor="isDualBooted" className="input-labels">
-                    Do you have Dual Booted Laptop ?{" "}
+                    Do you have dual booted laptop ?{" "}
                 </label>
                 <br />
                 <div className='selectdropdown'>
