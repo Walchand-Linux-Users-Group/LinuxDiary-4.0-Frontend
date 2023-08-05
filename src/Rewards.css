@@ -71,23 +71,6 @@
     margin: 0 3%;
 }
 
-.register .btn-hover {
-    font-size: 1.5rem;
-}
-
-.register {
-    position: -webkit-sticky;
-    position: sticky;
-
-    bottom: 0;  
-    height: 80%;
-    padding: 1% 0 0 0;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
-}
 
 /* .register {
     width: 100%;
