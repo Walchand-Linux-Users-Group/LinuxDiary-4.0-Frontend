@@ -260,11 +260,15 @@ const Register = () => {
                 <div className='selectdropdown'>
                     <select id="branch" name="branch" required=""
                         onChange={handleChange} class="mySelectArrow">
-                        <option value="" disabled selected>
+                        <option value="" disabled selected id='dont-display'>
                             Select your option
                         </option>
-                        <option value="CS">Computer Science</option>
-                        <option value="IT">Information Technology</option>
+                        <option value="CS">Computer Science Engineering</option>
+                        <option value="IT">Information Technology Engineering</option>
+                        <option value="ELECTRONICS">Electronics Engineering</option>
+                        <option value="ELECTRICAL">Electrical Engineering</option>
+                        <option value="MECHANICAL">Mechanical Engineering</option>
+                        <option value="CIVIL">Civil Engineering</option>
                         <option value="OTHERS">Others</option>
                     </select>
                 </div>
@@ -277,7 +281,7 @@ const Register = () => {
                 <div className='selectdropdown'>
                     <select id="yearOfStudy" name="yearOfStudy" required=""
                         onChange={handleChange} class="mySelectArrow">
-                        <option value="" disabled selected>
+                        <option value="" disabled selected id='dont-display'>
                             Select your option
                         </option>
                         <option value="First Year">First Year</option>
@@ -292,7 +296,7 @@ const Register = () => {
                 <br />
                 <div className='selectdropdown'>
                     <select id="isDualBooted" name="isDualBooted" required="" onChange={handleChange} class="mySelectArrow">
-                        <option value="" disabled selected>
+                        <option value="" disabled selected id='dont-display'>
                             Select your option
                         </option>
                         <option value="Yes">Yes</option>

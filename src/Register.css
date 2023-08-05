@@ -106,7 +106,9 @@ form {
 .submitButton {
     padding: 16px 24px 32px 24px;
 }
-
+#dont-display{
+    display: none;
+}
 select.mySelectArrow {
     -webkit-appearance: none;
     -moz-appearance: none;

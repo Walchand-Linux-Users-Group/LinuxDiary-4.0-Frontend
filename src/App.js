@@ -1,6 +1,7 @@
-import './App.css';
 import React from 'react'
+import './App.css';
 import './Bubbles.css'
+import './Button.css'
 import Hero from './Hero.js';
 import Rewards from './Rewards';
 import Roadmap from './Roadmap';
@@ -16,18 +17,17 @@ function App() {
     }
   }
   return (
-    <>
-      <Hero />
-      <div className='canvas'>
+    
+      <>
+        <Hero />
         <div className='glass titlebox'>
           <img src="./images/WLUG_black.png" alt="logo" />
           <div>
-            <h1>Linux Diary 4.0</h1>
+            <h1>LinuxDiary 4.0</h1>
             <h2>#Explore The Linux Realm</h2>
           </div>
         </div>
         <Roadmap />
-
         <div className="bubble" />
         <div className="bubble" />
         <div className="bubble" />
@@ -56,14 +56,14 @@ function App() {
         <Wargames />
         <Rewards />
         <div className='register'>
-          <button className="btn-hover color-1" onClick={handleRegister} id='register-button'>Register Now</button>
+          <button className="btn-flush" onClick={handleRegister}>Register Now</button>
         </div>
         <Register />
         <div className='imgg'>
           <img src="./images/footer-new.png" alt="sand" />
         </div>
         <Footer />
-      </div></>
+      </>
   );
 }
 
