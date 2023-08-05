@@ -1,14 +1,7 @@
 import React from 'react'
 import './Rewards.css'
-import Register from './Register'
 const Rewards = () => {
-    function handleRegister() {
-        const register = document.getElementById('register'); // Change 'targetElement' to the actual ID of your target element
 
-        if (register) {
-            register.scrollIntoView({ behavior: 'smooth' });
-        }
-    }
     return (
         <>
             <div className='rewards-main'>
@@ -29,15 +22,7 @@ const Rewards = () => {
                     </div>
                 </div>
             </div>
-            <div className='register'>
-                <button className="btn-hover color-1" onClick={handleRegister} id='register-button'>Register Now</button>
-            </div>
-            <div>
-                <Register />
-                <div className='imgg'>
-                    <img src="./images/footer-new.png" alt="sand" />
-                </div>
-            </div></>
+            </>
     )
 }
 
