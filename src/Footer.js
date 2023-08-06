@@ -119,7 +119,8 @@ function Footer() {
                 <div className='policies padding1rem'>
                     <div>
                         <a
-                            href='https://wiki.wcewlug.org/policies/privacy-policy'
+                            // href='https://wiki.wcewlug.org/policies/privacy-policy'
+                            href='https://github.com/Walchand-Linux-Users-Group/gitbook/blob/wiki/policies/privacy-policy.md'
                             target='_blank'
                             rel='noreferrer'
                         >
@@ -128,7 +129,8 @@ function Footer() {
                     </div>
                     <div>
                         <a
-                            href='https://wiki.wcewlug.org/policies/terms-and-conditions'
+                            // href='https://wiki.wcewlug.org/policies/terms-and-conditions'
+                            href='https://github.com/Walchand-Linux-Users-Group/gitbook/blob/wiki/policies/terms-and-conditions.md'
                             target='_blank'
                             rel='noreferrer'
                         >
@@ -137,7 +139,7 @@ function Footer() {
                     </div>
                     <div>
                         <a
-                            href='https://wiki.wcewlug.org/policies/cancellation-refund-policy'
+                            href='https://github.com/Walchand-Linux-Users-Group/gitbook/blob/wiki/policies/cancellation-refund-policy.md'
                             target='_blank'
                             rel='noreferrer'
                         >

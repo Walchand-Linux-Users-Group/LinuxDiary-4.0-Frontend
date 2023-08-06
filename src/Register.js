@@ -24,7 +24,7 @@ const Register = () => {
         email: '',
         phone: '',
         collegeName: '',
-        branch: '',
+        branch: 'other',
         yearOfStudy: '',
         isDualBooted: '',
         transactionId: '',
@@ -71,7 +71,6 @@ const Register = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-
         setisLoading(true)
         try {
             setisLoading(true)
@@ -251,13 +250,13 @@ const Register = () => {
                     type="text"
                     onChange={handleChange}
                 />
-                <label htmlFor="branch" className="input-labels">
+                {/* <label htmlFor="branch" className="input-labels" id='dont-display'>
                     {" "}
                     Branch{" "}
                 </label>
-                <br />
+                <br /> */}
 
-                <div className='selectdropdown'>
+                {/* <div className='selectdropdown' id='dont-display'>
                     <select id="branch" name="branch" required=""
                         onChange={handleChange} class="mySelectArrow">
                         <option value="" disabled selected id='dont-display'>
@@ -271,7 +270,7 @@ const Register = () => {
                         <option value="CIVIL">Civil Engineering</option>
                         <option value="OTHERS">Others</option>
                     </select>
-                </div>
+                </div> */}
                 <label htmlFor="yearOfStudy" className="input-labels">
                     {" "}
                     Year of Study{" "}
