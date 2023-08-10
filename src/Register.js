@@ -287,6 +287,7 @@ const Register = () => {
                         <option value="Second Year">Second Year</option>
                         <option value="Third Year">Third Year</option>
                         <option value="Fourth Year">Fourth Year</option>
+                        <option value="Other">Other</option>
                     </select>
                 </div>
                 <label htmlFor="isDualBooted" className="input-labels">
