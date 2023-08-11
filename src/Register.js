@@ -198,7 +198,7 @@ const Register = () => {
 
     // return (
     //     <div className="flex-container" id='register'>
-    //         <h2>If you have paid the amount and didn't recieve confirmation email,<br /> please contact Datta Gangji +91 75177 56075</h2>
+    //         <h2>If you have paid the amount and didn't recieve confirma email,<br /> please contact Datta Gangji +91 75177 56075</h2>
     //         <h1 className='pink'>Registrations are temporary down.</h1>
     //     </div>
 
