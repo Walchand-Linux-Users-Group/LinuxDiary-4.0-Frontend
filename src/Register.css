@@ -13,8 +13,19 @@
     box-shadow: 0 8px 32px 0 rgba(78, 90, 255, .568);
     background: hsla(0, 0%, 100%, .188);
 }
-
-
+#register{
+    padding:  0 2vw;
+}
+.vid{
+    width: fit-content;
+    height: auto;
+    margin: 4% auto!important;
+    padding: 2vw!important;
+}
+.vid iframe{
+    width: 80vw;
+    height: 45vw;    
+}
 form {
     width: 50%;
     color: white;
@@ -106,9 +117,11 @@ form {
 .submitButton {
     padding: 16px 24px 32px 24px;
 }
-#dont-display{
+
+#dont-display {
     display: none;
 }
+
 select.mySelectArrow {
     -webkit-appearance: none;
     -moz-appearance: none;

@@ -197,10 +197,16 @@ const Register = () => {
     // }
 
     return (
-        <div className="flex-container" id='register'>
-            {/* <h2>If you have paid the amount and didn't recieve confirma email,<br /> please contact Datta Gangji +91 75177 56075</h2> */}
-            <h1 className='pink'>Registrations are now closed.</h1>
-        </div>
+        <>
+            <div className="flex-container" id='register'>
+                {/* <h2>If you have paid the amount and didn't recieve confirma email,<br /> please contact Datta Gangji +91 75177 56075</h2> */}
+                <h1 className='pink'>Registrations are now closed.</h1>
+            </div>
+            <div className="flex-container vid" id='register'>
+                {/* <h2>If you have paid the amount and didn't recieve confirma email,<br /> please contact Datta Gangji +91 75177 56075</h2> */}
+                <iframe src="https://www.youtube.com/embed/x3gKaA-6wFg" title="LinuxDiary 4.0 | Official Trailer 🐧" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </>
 
     )
     // return (
