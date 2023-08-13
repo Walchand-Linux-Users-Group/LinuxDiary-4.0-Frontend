@@ -79,28 +79,28 @@ function App() {
   }
 
 
-  function handleRegister() {
-    const register = document.getElementById('register'); // Change 'targetElement' to the actual ID of your target element
+  // function handleRegister() {
+  //   const register = document.getElementById('register'); // Change 'targetElement' to the actual ID of your target element
 
-    if (register) {
-      register.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
+  //   if (register) {
+  //     register.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // }
   
-  document.addEventListener('scroll', function () {
-    console.log(window.scrollY);
-    const b1 = document.querySelector('.b1');
-    const b2 = document.querySelector('.b2');
-    if (window.scrollY > 2890) {
-      b1.style.visibility = 'hidden';
-      b2.style.visibility = 'visible';
-    } else {
-      b1.style.visibility = 'visible';
-      b2.style.visibility = 'hidden';
-    }
-  }, {
-    passive: true
-  });
+  // document.addEventListener('scroll', function () {
+  //   console.log(window.scrollY);
+  //   const b1 = document.querySelector('.b1');
+  //   const b2 = document.querySelector('.b2');
+  //   if (window.scrollY > 2890) {
+  //     b1.style.visibility = 'hidden';
+  //     b2.style.visibility = 'visible';
+  //   } else {
+  //     b1.style.visibility = 'visible';
+  //     b2.style.visibility = 'hidden';
+  //   }
+  // }, {
+  //   passive: true
+  // });
   return (
 
     <>
@@ -140,7 +140,7 @@ function App() {
       <div className="bubble" />
       <Wargames />
       <Rewards />
-      <div className='register'>
+      {/* <div className='register'>
         <button className="btn-flush b1" onClick={handleRegister}>
           <div class="left"></div>
           Register Now
@@ -151,7 +151,7 @@ function App() {
           Register Now
           <div class="right"></div>
         </button>
-      </div>
+      </div> */}
       <Register />
       <div className='imgg'>
         <img src="./images/footer-new.png" alt="sand" />
