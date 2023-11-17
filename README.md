@@ -8,6 +8,10 @@
 
 - ### [Smit Butle](https://github.com/smitbutle)
 
+# Techstack:
+
+- ### ReactJS
+
 <br/><hr/>
 
 <p align="center">© 2023 WCEWLUG, ALL RIGHTS RESERVED</p>
