@@ -1,4 +1,4 @@
-# Registration Website for:
+# Registration Website Frontend for:
 
 <img src="https://res.cloudinary.com/dduur8qoo/image/upload/v1700205271/WALLPAPER_1_c7xtsk.png">
 
