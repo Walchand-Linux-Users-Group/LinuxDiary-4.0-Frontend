@@ -69,132 +69,132 @@ const Register = () => {
     //     event.target.reset()
     // }
 
-    // const handleSubmit = async (e) => {
-    //     e.preventDefault()
-    //     setisLoading(true)
-    //     try {
-    //         setisLoading(true)
-    //         const res = await API.post('/createUser', formData)
-    //         setisLoading(false)
-    //         handleReset(e)
-    //         console.log('res :')
-    //         console.log(res)
-    //         console.log(res.data.postdata.phone.toString().length)
-    //         if (res.status === 201) {
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        setisLoading(true)
+        try {
+            setisLoading(true)
+            const res = await API.post('/createUser', formData)
+            setisLoading(false)
+            handleReset(e)
+            console.log('res :')
+            console.log(res)
+            console.log(res.data.postdata.phone.toString().length)
+            if (res.status === 201) {
 
-    //             // alert('You have successfully Registered. Check email for confirmation')
-    //             swal
-    //                 .fire({
-    //                     title: 'Registered Successfully!! Check email for confirmation.',
-    //                     imageHeight: 200,
-    //                     confirmButtonColor: '#3085d6',
-    //                     confirmButtonText: 'Continue',
-    //                     imageUrl:
-    //                         'https://res.cloudinary.com/dizrxbb27/image/upload/v1681066882/TechnoTweet/hurray_uptaef.png',
-    //                     customClass: {
-    //                         popup: 'animated fadeInDown faster',
-    //                         confirmButton: 'animated bounceIn faster',
-    //                         cancelButton: 'animated bounceIn faster',
-    //                     },
-    //                 })
+                // alert('You have successfully Registered. Check email for confirmation')
+                swal
+                    .fire({
+                        title: 'Registered Successfully!! Check email for confirmation.',
+                        imageHeight: 200,
+                        confirmButtonColor: '#3085d6',
+                        confirmButtonText: 'Continue',
+                        imageUrl:
+                            'https://res.cloudinary.com/dizrxbb27/image/upload/v1681066882/TechnoTweet/hurray_uptaef.png',
+                        customClass: {
+                            popup: 'animated fadeInDown faster',
+                            confirmButton: 'animated bounceIn faster',
+                            cancelButton: 'animated bounceIn faster',
+                        },
+                    })
 
-    //             return true
-    //         }
-    //         console.log(res)
-    //         return true
-    //     }
+                return true
+            }
+            console.log(res)
+            return true
+        }
 
-    //     catch (err) {
-    //         console.log('err :')
-    //         console.log(err)
-    //         setisLoading(false)
-    //         if (
-    //             err.response.data.success === 'false' &&
-    //             err.response.data.message === 'Email Already Registered'
-    //         ) {
-    //             swal.fire({
-    //                 title: 'Email already registered!!! Try using different email.',
-    //                 imageUrl:
-    //                     'https://res.cloudinary.com/dizrxbb27/image/upload/v1681066890/TechnoTweet/oops_qo58xk.png',
-    //                 imageHeight: 200,
-    //                 imageWidth: 200,
-    //                 confirmButtonColor: '#3085d6',
-    //                 confirmButtonText: 'OK',
-    //                 animation: 'true',
-    //                 customClass: {
-    //                     popup: 'animated fadeInDown faster',
-    //                     confirmButton: 'animated bounceIn faster',
-    //                     cancelButton: 'animated bounceIn faster',
-    //                 },
-    //             })
-    //             return false
-    //         } else if (
-    //             err.response.data.success === 'false' &&
-    //             err.response.data.message === 'Transaction id already used'
-    //         ) {
-    //             swal.fire({
-    //                 title: 'Transaction ID already used. Try different one!!',
-    //                 imageUrl:
-    //                     'https://res.cloudinary.com/dizrxbb27/image/upload/v1681066890/TechnoTweet/oops_qo58xk.png',
-    //                 imageHeight: 200,
-    //                 imageWidth: 200,
-    //                 confirmButtonColor: '#3085d6',
-    //                 confirmButtonText: 'OK',
-    //                 animation: 'true',
-    //                 customClass: {
-    //                     popup: 'animated fadeInDown faster',
-    //                     confirmButton: 'animated bounceIn faster',
-    //                     cancelButton: 'animated bounceIn faster',
-    //                 },
-    //             })
-    //             return false
-    //         } else if (
-    //             err.response.data.success === 'false' &&
-    //             err.response.data.message === 'Invalid mobile number'
-    //         ) {
-    //             // console.log('catch');
-    //             swal.fire({
-    //                 title: 'Invalid mobile number',
-    //                 imageUrl:
-    //                     'https://res.cloudinary.com/dizrxbb27/image/upload/v1681066890/TechnoTweet/oops_qo58xk.png',
-    //                 imageHeight: 300,
-    //                 imageWidth: 200,
-    //                 confirmButtonColor: '#3085d6',
-    //                 confirmButtonText: 'OK',
-    //                 animation: 'true',
-    //                 customClass: {
-    //                     popup: 'animated fadeInDown faster',
-    //                     confirmButton: 'animated bounceIn faster',
-    //                     cancelButton: 'animated bounceIn faster',
-    //                 },
-    //             })
-    //             return false
-    //         }
-    //         else {
-    //             swal.fire({
-    //                 title: 'Something went wrong!! Try again after some time.',
-    //                 imageUrl:
-    //                     'https://res.cloudinary.com/dizrxbb27/image/upload/v1681066890/TechnoTweet/oops_qo58xk.png',
-    //                 imageHeight: 300,
-    //                 imageWidth: 200,
-    //                 confirmButtonColor: '#3085d6',
-    //                 confirmButtonText: 'OK',
-    //                 animation: 'true',
-    //                 customClass: {
-    //                     popup: 'animated fadeInDown faster',
-    //                     confirmButton: 'animated bounceIn faster',
-    //                     cancelButton: 'animated bounceIn faster',
-    //                 },
-    //             })
-    //             return false
-    //         }
-    //     }
-    //     //   const data = API.getData(formData);
-    //     //   setisLoading(false);
-    //     //   sethurray(true)
-    //     // }catch (error) {
-    //     //   console.log(error);
-    // }
+        catch (err) {
+            console.log('err :')
+            console.log(err)
+            setisLoading(false)
+            if (
+                err.response.data.success === 'false' &&
+                err.response.data.message === 'Email Already Registered'
+            ) {
+                swal.fire({
+                    title: 'Email already registered!!! Try using different email.',
+                    imageUrl:
+                        'https://res.cloudinary.com/dizrxbb27/image/upload/v1681066890/TechnoTweet/oops_qo58xk.png',
+                    imageHeight: 200,
+                    imageWidth: 200,
+                    confirmButtonColor: '#3085d6',
+                    confirmButtonText: 'OK',
+                    animation: 'true',
+                    customClass: {
+                        popup: 'animated fadeInDown faster',
+                        confirmButton: 'animated bounceIn faster',
+                        cancelButton: 'animated bounceIn faster',
+                    },
+                })
+                return false
+            } else if (
+                err.response.data.success === 'false' &&
+                err.response.data.message === 'Transaction id already used'
+            ) {
+                swal.fire({
+                    title: 'Transaction ID already used. Try different one!!',
+                    imageUrl:
+                        'https://res.cloudinary.com/dizrxbb27/image/upload/v1681066890/TechnoTweet/oops_qo58xk.png',
+                    imageHeight: 200,
+                    imageWidth: 200,
+                    confirmButtonColor: '#3085d6',
+                    confirmButtonText: 'OK',
+                    animation: 'true',
+                    customClass: {
+                        popup: 'animated fadeInDown faster',
+                        confirmButton: 'animated bounceIn faster',
+                        cancelButton: 'animated bounceIn faster',
+                    },
+                })
+                return false
+            } else if (
+                err.response.data.success === 'false' &&
+                err.response.data.message === 'Invalid mobile number'
+            ) {
+                // console.log('catch');
+                swal.fire({
+                    title: 'Invalid mobile number',
+                    imageUrl:
+                        'https://res.cloudinary.com/dizrxbb27/image/upload/v1681066890/TechnoTweet/oops_qo58xk.png',
+                    imageHeight: 300,
+                    imageWidth: 200,
+                    confirmButtonColor: '#3085d6',
+                    confirmButtonText: 'OK',
+                    animation: 'true',
+                    customClass: {
+                        popup: 'animated fadeInDown faster',
+                        confirmButton: 'animated bounceIn faster',
+                        cancelButton: 'animated bounceIn faster',
+                    },
+                })
+                return false
+            }
+            else {
+                swal.fire({
+                    title: 'Something went wrong!! Try again after some time.',
+                    imageUrl:
+                        'https://res.cloudinary.com/dizrxbb27/image/upload/v1681066890/TechnoTweet/oops_qo58xk.png',
+                    imageHeight: 300,
+                    imageWidth: 200,
+                    confirmButtonColor: '#3085d6',
+                    confirmButtonText: 'OK',
+                    animation: 'true',
+                    customClass: {
+                        popup: 'animated fadeInDown faster',
+                        confirmButton: 'animated bounceIn faster',
+                        cancelButton: 'animated bounceIn faster',
+                    },
+                })
+                return false
+            }
+        }
+        //   const data = API.getData(formData);
+        //   setisLoading(false);
+        //   sethurray(true)
+        // }catch (error) {
+        //   console.log(error);
+    }
 
     return (
         <>
